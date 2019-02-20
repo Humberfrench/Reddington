@@ -1,0 +1,96 @@
+﻿@{
+    ViewBag.Title = "Alunos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    IEnumerable<SelectListItem> listaEvangelizador = ViewBag.Evangelizador as IEnumerable<SelectListItem>;
+}
+
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>Copiar Turmas Moral Cristã</h5>
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-md-1">&nbsp;</div>
+                        <div class="col-md-2"><label id="labelNome">Evangelizador:</label></div>
+                        <div class="col-md-8">
+                            @Html.DropDownList("Evangelizador", listaEvangelizador, new { @id = "Evangelizador", @class = "form-control m-b" })
+                        </div>
+                        <div class="col-md-1">&nbsp;</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">&nbsp;</div>
+                        <div class="col-md-2"><label id="labelDescricaoAtual" for="Descricao">Nome da Turma:</label></div>
+                        <div class="col-md-8">
+                            <input type="hidden" id="TurmaId" name="TurmaId" value="" />
+                            <input type="text" id="DescricaoAtual" name="DescricaoAtual" value="" class="form-control m-b-md" />
+                        </div>
+                        <div class="col-md-1">&nbsp;</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">&nbsp;</div>
+                        <div class="col-md-2"><label id="labeAno" for="Ano">Ano Atual:</label></div>
+                        <div class="col-md-6">
+                            <select name="Ano" id="Ano" class="form-control m-b">
+                                <option value="2014">2014</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                            </select>
+                        </div>
+                        <div class="row col-md-2">
+                            <button type="button" class="btn btn-primary" id="Pesquisar">
+                                <i class="glyphicon glyphicon-search"></i>Pesquisar
+                            </button>
+                        </div>
+                        <div class="col-md-1">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-md-1">&nbsp;</div>
+                        <div class="col-md-2"><label id="labelDescricao" for="Descricao">Nome da Turma:</label></div>
+                        <div class="col-md-8">
+                            <input type="text" id="Descricao" name="Descricao" value="" class="form-control m-b-md" />
+                        </div>
+                        <div class="col-md-1">&nbsp;</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">&nbsp;</div>
+                        <div class="col-md-2"><label id="labelAnoNovo" for="Ano">Novo Ano:</label></div>
+                        <div class="col-md-6">
+                            <select name="AnoNovo" id="AnoNovo" class="form-control m-b">
+                                <option value="2014">2014</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                            </select>
+                        </div>
+                        <div class="row col-md-2">
+                            <button type="button" class="btn btn-primary" id="Gravar">
+                                <i class="glyphicon glyphicon-floppy-disk"></i>Gravar
+                            </button>
+                        </div>
+                        <div class="col-md-1">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+{
+    @Scripts.Render("~/plugins/dataPicker")
+    @Scripts.Render("~/plugins/dataTables")
+    @Scripts.Render("~/plugins/Moment")
+    @Scripts.Render("~/plugins/jasnyBootstrap")
+    @Scripts.Render("~/script/Turmas/CopiarTurma")
+}

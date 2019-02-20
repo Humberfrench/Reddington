@@ -1,0 +1,67 @@
+﻿@model Rendimento.AutenticacaoMultifatorial.Aplicacao.ViewModels.UsuarioViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>@AppSettings.Get("NomeLogo") &raquo; @AppSettings.Get("NomeTitulo") &raquo; Login</title>
+
+    
+    @Styles.Render("~/plugins/toastr")
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/font-awesome/css")
+    
+
+</head>
+
+<body class="gray-bg">
+
+    <div class="middle-box text-center loginscreen  animated fadeInDown">
+        <div>
+            <div>
+                <h1 class="logo-name">@AppSettings.Get("NomeLogo")</h1>
+            </div>
+            <h3>Bem vindo ao Módulo Administrativo de Autenticação Multifatorial</h3>
+            <p>Todas as ações aqui executadas são logadas para fins de auditoria.</p>
+            <p>Para efetuar a atenticação no sistema, use seu usuário e senha de rede</p>
+
+            @using (Html.BeginForm("Index", "Acesso", FormMethod.Post, new { @class = "m-t", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+
+                <input type="hidden" id="Dominio" name="Dominio" value="@ViewBag.Dominio" />
+                <div class="form-group">
+                    @Html.TextBoxFor(u => u.LoginAD, new { @class = "form-control", placeholder = "Usuário", required = "" })
+                </div>
+
+                <div class="form-group">
+                    @Html.PasswordFor(u => u.Senha, new { @class = "form-control", placeholder = "Senha", required = "" })
+                </div>
+
+                <button type="submit" class="btn btn-primary block full-width m-b">Entrar</button>
+            }
+            <p class="m-t"> <small>@AppSettings.Get("NomeRodape") &copy; @DateTime.Now.Year</small> </p>
+        </div>
+    </div>
+    
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/inspinia")
+    @Scripts.Render("~/bundles/slimScroll")
+    @Scripts.Render("~/bundles/skinConfig")
+    @Scripts.Render("~/bundles/toastr")
+    @Scripts.Render("~/script/main")
+
+
+    @Html.Action("Alertar", "Site", TempData["Aviso"])
+
+
+</body>
+
+</html>

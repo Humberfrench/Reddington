@@ -1,0 +1,147 @@
+﻿@model IEnumerable<Rendimento.AutenticacaoMultifatorial.Aplicacao.ViewModels.UsuarioViewModel>
+@Styles.Render("~/Content/plugins/dataTables/dataTablesStyles")
+
+@{
+    ViewBag.Title = "Usuários";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var disabled = "";
+}
+
+<input type="hidden" name="URLObterTodos" id="URLObterTodos" value="@Url.Action("Index")" />
+<input type="hidden" name="URLFiltrar" id="URLFiltrar" value="@Url.Action("Filtrar", new { status = UrlParameter.Optional, nome = UrlParameter.Optional })" />
+<input type="hidden" name="URLEdit" id="URLEdit" value="@Url.Action("Edit", new { id = UrlParameter.Optional })" />
+<input type="hidden" name="URLGravar" id="URLGravar" value="@Url.Action("Gravar")" />
+<input type="hidden" name="URLExcluir" id="URLExcluir" value="@Url.Action("Excluir")" />
+<input type="hidden" name="URLObterUsuarioViaAD" id="URLObterUsuarioViaAD" value="@Url.Action("ObterUsuarioViaAD")" />
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox-title">
+                <h5>Lista de Usuários</h5>
+                <div class="ibox-tools">
+                    <button type="button" id="Novo" name="Novo"
+                            class="btn btn-primary btn-lg"
+                            data-toggle="tooltip" data-placement="top"
+                            title="Novo Registro">
+                        <i class="glyphicon glyphicon-file"></i>Novo
+                    </button>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <div class="row col-lg-12">
+                    <div class="row col-lg-6">Pesquisar</div>
+                    <div class="row col-lg-1">&nbsp;</div>
+                    <div class="row col-lg-3">Situação</div>
+                    <div class="row col-lg-1">&nbsp;</div>
+                    <div class="row col-lg-1">&nbsp;</div>
+                </div>
+                <div class="row col-lg-12">
+                    <div class="row col-lg-6 col-md-6">
+                        <input type="text" class="form-control" id="PesquisarNome" name="PesquisarNome" placeholder="Insira o nome do Usuário para pesquisa" />
+                    </div>
+                    <div class="row col-lg-1">&nbsp;</div>
+                    <div class="row col-lg-3">
+                        <select class="form-control m-b" name="PesquisarSituacao" id="PesquisarSituacao">
+                            <option value="-1">Todos</option>
+                            <option value="1">Ativo</option>
+                            <option value="0">Inativo</option>
+                        </select>
+                    </div>
+                    <div class="row col-lg-1">&nbsp;</div>
+                    <div class="row col-lg-1">
+                        <a href="#" id="Pesquisar" class="btn btn-primary btn-md" data-toggle="tooltip" data-placement="top" title="Pesquisar"><i class="glyphicon glyphicon-search"></i></a>
+                    </div>
+                </div>
+
+                <div class="row col-lg-12 col-md-12">&nbsp;</div>
+
+                <table class="table table-striped" id="TableUsuario">
+                    <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.UsuarioId)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Nome)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.LoginAD)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Dominio)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Perfil)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Status)
+                        </th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.UsuarioId)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Nome)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.LoginAD)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Dominio)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Perfil.Nome)
+                                </td>
+                                <td>
+                                    @if (item.Status.HasValue && item.Status.Value)
+                                    {
+                                        disabled = "";
+                                        @Html.Raw("Ativo")
+                                    }
+                                    else
+                                    {
+                                        disabled = "disabled=disabled";
+                                        @Html.Raw("Inativo")
+                                    }
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-primary btn-sm" onclick="Edit('@item.UsuarioId')">
+                                        <i class="glyphicon glyphicon-pencil" data-toggle="tooltip" data-placement="top" title="Editar Registro"></i>
+                                    </button>
+                                    <button type="button" id="Excluir" name="Excluir" class="btn btn-danger btn-sm" onclick="ExcluirConfirmar('@item.UsuarioId','@item.Nome','@item.LoginAD')" @disabled>
+                                        <i class=" glyphicon glyphicon-trash" data-toggle="tooltip" data-placement="top" title="Excluir Registro">
+                                        </i>
+                                    </button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+@Html.Partial("Edicao");
+@Html.Partial("Exclusao");
+
+@section scripts
+{
+    @Scripts.Render("~/plugins/dataTables")
+    @Scripts.Render("~/script/usuario/main")
+}
+
+
+
+
+
+
+   

@@ -1,0 +1,40 @@
+﻿@using Red.Application.ViewModel.DTO
+@using Red.Extensions
+@model IEnumerable<DTOAluno>     
+@{
+    Layout = null;
+}           
+
+@Styles.Render("~/plugins/awesomeCheckboxStyles")
+<table class="table table-striped" id="TableAlunoLivre">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <div class="checkbox checkbox-primary">
+                        <input type="checkbox" value="@item.Codigo" name="Aluno" id="Aluno_@item.Codigo">
+                        <label id="labelAluno_@item.Codigo" for="Aluno_@item.Codigo">@Html.DisplayFor(modelItem => item.Codigo)</label>
+                    </div>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Idade)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

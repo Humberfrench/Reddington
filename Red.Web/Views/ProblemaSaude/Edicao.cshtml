@@ -1,0 +1,36 @@
+﻿<!-- Edição Modal -->
+@Html.AntiForgeryToken()
+<div id="modalEdicao" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content animated">
+            <div class="modal-header success-element">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel">Problemas de Saúde</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-1">&nbsp;</div>
+                    <div class="col-md-2"><label id="labelCodigo" for="Codigo">Código</label></div>
+                    <div class="col-md-1">&nbsp;</div>
+                    <div class="col-md-7"><input type="text" id="Codigo" name="Codigo" value="" readonly="readonly" class="form-control m-b-md" /></div>
+                    <div class="col-md-1">&nbsp;</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1">&nbsp;</div>
+                    <div class="col-md-2"><label id="labelNome" for="Nome">Descricao</label></div>
+                    <div class="col-md-1">&nbsp;</div>
+                    <div class="col-md-7"><input type="text" id="Descricao" name="Descricao" value="" class="form-control m-b-md" placeholder="Descricao da Caracteristica" /></div>
+                    <div class="col-md-1">&nbsp;</div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                    <i class="glyphicon glyphicon-remove"></i>Fechar
+                </button>
+                <button type="button" class="btn btn-primary" id="Gravar">
+                    <i class="glyphicon glyphicon-floppy-disk"></i>Gravar
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

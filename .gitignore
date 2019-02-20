@@ -6,3 +6,12 @@ Red.DomainValidator/obj/
 Red.Extensions/bin/
 Red.Extensions/obj/
 Red.DomainValidator/bin/
+Red.Ioc/bin/
+Red.Ioc/obj/
+Red.Library/bin/
+Red.Library/obj/
+Red.Publish/
+Red.Web/bin/
+Red.Repository/obj/
+Red.Repository/bin/
+Red.Web/obj/

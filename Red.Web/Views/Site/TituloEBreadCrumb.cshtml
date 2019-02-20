@@ -1,0 +1,35 @@
+﻿@using Red.Library
+@model BreadCrumbETitulo
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-sm-10">
+
+        <h2>@Model.Titulo</h2>
+
+        @if (Model.BreadCrumbs.Any())
+        {
+
+            <ol class="breadcrumb">
+
+                <li>
+                    @Html.ActionLink("Home", "Index", "Home")
+                </li>
+
+                @foreach (var breadcrumb in Model.BreadCrumbs)
+            {
+                if (Model.BreadCrumbs.IndexOf(breadcrumb) != Model.BreadCrumbs.Count - 1)
+                {
+                    <li>
+                        @Html.ActionLink(breadcrumb.LinkText, breadcrumb.ActionName, breadcrumb.ControllerName)
+                    </li>
+                }
+                else
+                {
+                    <li class="active">@breadcrumb.LinkText</li>
+                }
+            }
+
+            </ol>
+            }
+    </div>
+</div>

@@ -1,0 +1,96 @@
+﻿@using Red.Application.ViewModel
+@model IEnumerable<AtividadePreferidaViewModel>
+@Styles.Render("~/Content/plugins/dataTables/dataTablesStyles")
+@{
+    ViewBag.Title = "Atividades Preferidas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var disabled = "";
+}
+
+<input type="hidden" name="URLObterTodos" id="URLObterTodos" value="@Url.Action("Index")" />
+<input type="hidden" name="URLFiltrar" id="URLFiltrar" value="@Url.Action("Filtrar", new { status = UrlParameter.Optional, nome = UrlParameter.Optional })" />
+<input type="hidden" name="URLEdit" id="URLEdit" value="@Url.Action("Edit", new { id = UrlParameter.Optional })" />
+<input type="hidden" name="URLGravar" id="URLGravar" value="@Url.Action("Gravar")" />
+<input type="hidden" name="URLExcluir" id="URLExcluir" value="@Url.Action("Excluir")" />
+<input type="hidden" name="URLExcluir" id="URLAutoComplete" value="@Url.Action("ObterNomesParaPesquisa")" />
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Lista de Atividades Preferidas</h5>
+                    <div class="ibox-tools">
+                        <button type="button" id="Novo" name="Novo"
+                                class="btn btn-primary btn-lg"
+                                data-toggle="tooltip" data-placement="top"
+                                title="Novo Registro">
+                            <i class="glyphicon glyphicon-file"></i>Novo
+                        </button>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="row col-lg-12">
+                        <div class="row col-lg-10">Pesquisar</div>
+                        <div class="row col-lg-2">&nbsp;</div>
+                    </div>
+                    <div class="row col-lg-12">
+                        <div class="row col-lg-10 col-md-'0'">
+                            <input type="text" class="form-control" id="PesquisarNome" name="PesquisarNome" placeholder="Digite o nome ou parte dele" />
+                        </div>
+                        <div class="row col-lg-1">&nbsp;</div>
+                        <div class="row col-lg-1">
+                            <a href="#" id="Pesquisar" class="btn btn-primary btn-md" data-toggle="tooltip" data-placement="top" title="Pesquisar"><i class="glyphicon glyphicon-search"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="row col-lg-12 col-md-12">&nbsp;</div>
+
+                    <table class="table table-striped" id="TableCaracteristica">
+                        <thead>
+                            <tr>
+                                <th class="col-lg-2">Codigo</th>
+                                <th class="col-lg-8">Descricao</th>
+                                <th class="col-lg-2">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Codigo)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Descricao)
+                                    </td>
+                                    <td style="text-align:right;">
+                                        <button type="button" class="btn btn-primary btn-sm" onclick="Edit('@item.Codigo')">
+                                            <i class="glyphicon glyphicon-pencil" data-toggle="tooltip" data-placement="top" title="Editar Registro"></i>
+                                        </button>
+                                        <a href="@Url.Action("Alunos", new { id = item.Codigo })" id="VerAlunos" name="VerAlunos" class="btn btn-info btn-sm">
+                                            <i class="glyphicon glyphicon-user" data-toggle="tooltip" data-placement="top" title="Alunos do Responsavel"></i>
+                                        </a>
+                                        <button type="button" id="Excluir" name="Excluir" class="btn btn-danger btn-sm" onclick="ExcluirConfirmar('@item.Codigo','@item.Descricao')" @disabled>
+                                            <i class=" glyphicon glyphicon-trash" data-toggle="tooltip" data-placement="top" title="Excluir Registro">
+                                            </i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+@Html.Partial("Edicao");
+@Html.Partial("Exclusao");
+
+@section scripts
+{
+    @Scripts.Render("~/plugins/dataTables")
+    @Scripts.Render("~/script/Caracteristica/main")
+}
