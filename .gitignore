@@ -1,2 +1,8 @@
 Red.Application/bin/
 Red.Application/obj/
+Red.Domain/bin/
+Red.Domain/obj/
+Red.DomainValidator/obj/
+Red.Extensions/bin/
+Red.Extensions/obj/
+Red.DomainValidator/bin/
