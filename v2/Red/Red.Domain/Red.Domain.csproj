@@ -42,10 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entity\Aluno.cs" />
+    <Compile Include="Entity\AtividadesPreferida.cs" />
+    <Compile Include="Entity\Caracteristica.cs" />
+    <Compile Include="Entity\Evangelizador.cs" />
+    <Compile Include="Entity\Model.cs" />
+    <Compile Include="Entity\ProblemasSaude.cs" />
+    <Compile Include="Entity\Responsavel.cs" />
+    <Compile Include="Entity\Status.cs" />
+    <Compile Include="Entity\Turma.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Entity\" />
     <Folder Include="Enum\" />
     <Folder Include="Interfaces\Repository\" />
     <Folder Include="Interfaces\Services\" />

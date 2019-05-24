@@ -1,0 +1,2 @@
+C:\Humberto\Desenvolvimento\Reddington\v2\Red\Red.EF\obj\Debug\Red.EF.csprojAssemblyReference.cache
+C:\Humberto\Desenvolvimento\Reddington\v2\Red\Red.EF\obj\Debug\Red.EF.csproj.CoreCompileInputs.cache
