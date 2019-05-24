@@ -5,10 +5,11 @@ namespace Red.Domain.Entity
 {
     public partial class Status
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        private IList<Aluno> aluno;
+
         public Status()
         {
-            Aluno = new HashSet<Aluno>();
+            aluno = new List<Aluno>();
         }
 
         public int StatusId { get; set; }
@@ -17,7 +18,10 @@ namespace Red.Domain.Entity
         [StringLength(50)]
         public string Descricao { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Aluno> Aluno { get; set; }
+        public virtual IList<Aluno> Aluno
+        {
+            get => aluno;
+            set => aluno = value;
+        }
     }
 }

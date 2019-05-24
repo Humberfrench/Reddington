@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7D842FAE-6B2E-4CF3-B145-050050EC88FB}</ProjectGuid>
+    <ProjectGuid>{E8950ABE-B5C9-4DFD-9608-06DD65C8615A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Red.Domain</RootNamespace>
-    <AssemblyName>Red.Domain</AssemblyName>
+    <RootNamespace>Red.Repository</RootNamespace>
+    <AssemblyName>Red.Repository</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -31,9 +31,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=1.60.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.60.6\lib\net451\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,26 +53,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entity\Aluno.cs" />
-    <Compile Include="Entity\AtividadesPreferida.cs" />
-    <Compile Include="Entity\Caracteristica.cs" />
-    <Compile Include="Entity\Evangelizador.cs" />
-    <Compile Include="Entity\ProblemasSaude.cs" />
-    <Compile Include="Entity\Responsavel.cs" />
-    <Compile Include="Entity\Status.cs" />
-    <Compile Include="Entity\Turma.cs" />
-    <Compile Include="Interfaces\Repository\IAlunoRepository.cs" />
-    <Compile Include="Interfaces\Repository\IRepositorioBase.cs" />
+    <Compile Include="AlunoRepository.cs" />
+    <Compile Include="Base\RepositorioBase.cs" />
+    <Compile Include="Context\ContextManager.cs" />
+    <Compile Include="Context\RedContext.cs" />
+    <Compile Include="Interface\IContextManager.cs" />
+    <Compile Include="Mapping\AlunoMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Enum\" />
-    <Folder Include="Interfaces\Repository\UnitOfWork\" />
-    <Folder Include="Interfaces\Services\" />
-    <Folder Include="ObjectValue\" />
+    <Compile Include="UnitOfWork\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Red.Domain\Red.Domain.csproj">
+      <Project>{7d842fae-6b2e-4cf3-b145-050050ec88fb}</Project>
+      <Name>Red.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

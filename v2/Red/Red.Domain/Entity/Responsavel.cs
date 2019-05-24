@@ -7,10 +7,11 @@ namespace Red.Domain.Entity
     [Table("Responsavel")]
     public partial class Responsavel
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        private IList<Aluno> aluno;
+
         public Responsavel()
         {
-            Aluno = new HashSet<Aluno>();
+            aluno = new List<Aluno>();
         }
 
         public int ResponsavelId { get; set; }
@@ -48,7 +49,10 @@ namespace Red.Domain.Entity
         [StringLength(15)]
         public string Celular2 { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Aluno> Aluno { get; set; }
+        public virtual IList<Aluno> Aluno
+        {
+            get => aluno;
+            set => aluno = value;
+        }
     }
 }

@@ -7,10 +7,11 @@ namespace Red.Domain.Entity
     [Table("Evangelizador")]
     public partial class Evangelizador
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        private ICollection<Turma> turma;
+
         public Evangelizador()
         {
-            Turma = new HashSet<Turma>();
+            turma = new HashSet<Turma>();
         }
 
         public int EvangelizadorId { get; set; }
@@ -27,7 +28,10 @@ namespace Red.Domain.Entity
         [StringLength(75)]
         public string Email { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Turma> Turma { get; set; }
+        public virtual ICollection<Turma> Turma
+        {
+            get => turma;
+            set => turma = value;
+        }
     }
 }

@@ -5,12 +5,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Red.Domain.Entity
 {
     [Table("ProblemasSaude")]
-    public partial class ProblemasSaude
+    public class ProblemasSaude
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        private IList<Aluno> aluno;
+
         public ProblemasSaude()
         {
-            Aluno = new HashSet<Aluno>();
+            aluno = new List<Aluno>();
         }
 
         [Key]
@@ -20,7 +21,10 @@ namespace Red.Domain.Entity
         [StringLength(50)]
         public string Descricao { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Aluno> Aluno { get; set; }
+        public virtual IList<Aluno> Aluno
+        {
+            get => aluno;
+            set => aluno = value;
+        }
     }
 }

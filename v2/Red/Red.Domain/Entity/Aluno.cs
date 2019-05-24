@@ -8,13 +8,17 @@ namespace Red.Domain.Entity
     [Table("Aluno")]
     public partial class Aluno
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        private IList<AtividadesPreferida> atividadesPreferida;
+        private IList<Caracteristica> caracteristica;
+        private IList<ProblemasSaude> problemasSaude;
+        private IList<Turma> turma;
+
         public Aluno()
         {
-            AtividadesPreferida = new HashSet<AtividadesPreferida>();
-            Caracteristica = new HashSet<Caracteristica>();
-            ProblemasSaude = new HashSet<ProblemasSaude>();
-            Turma = new HashSet<Turma>();
+            atividadesPreferida = new List<AtividadesPreferida>();
+            caracteristica = new List<Caracteristica>();
+            problemasSaude = new List<ProblemasSaude>();
+            turma = new List<Turma>();
         }
 
         public int AlunoId { get; set; }
@@ -45,16 +49,28 @@ namespace Red.Domain.Entity
 
         public virtual Status Status { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<AtividadesPreferida> AtividadesPreferida { get; set; }
+        public virtual IList<AtividadesPreferida> AtividadesPreferida
+        {
+            get => atividadesPreferida;
+            set => atividadesPreferida = value;
+        }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Caracteristica> Caracteristica { get; set; }
+        public virtual IList<Caracteristica> Caracteristica
+        {
+            get => caracteristica;
+            set => caracteristica = value;
+        }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ProblemasSaude> ProblemasSaude { get; set; }
+        public virtual IList<ProblemasSaude> ProblemasSaude
+        {
+            get => problemasSaude;
+            set => problemasSaude = value;
+        }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Turma> Turma { get; set; }
+        public virtual IList<Turma> Turma
+        {
+            get => turma;
+            set => turma = value;
+        }
     }
 }
