@@ -1,0 +1,2 @@
+C:\Humberto\Desenvolvimento\Reddington\v2\Red\Red.Domain\obj\Debug\Red.Domain.csprojAssemblyReference.cache
+C:\Humberto\Desenvolvimento\Reddington\v2\Red\Red.Domain\obj\Debug\Red.Domain.csproj.CoreCompileInputs.cache

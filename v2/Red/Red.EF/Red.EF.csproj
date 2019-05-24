@@ -49,22 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Aluno.cs" />
-    <Compile Include="AlunoAtividadePreferida.cs" />
-    <Compile Include="AlunoCaracteristica.cs" />
-    <Compile Include="AlunoProblemaSaude.cs" />
-    <Compile Include="AlunoTurma.cs" />
-    <Compile Include="AtividadesPreferida.cs" />
-    <Compile Include="Caracteristica.cs" />
-    <Compile Include="RedContext.cs" />
-    <Compile Include="Evangelizador.cs" />
-    <Compile Include="ProblemasSaude.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RelacaoCricancaSacola.cs" />
-    <Compile Include="RelacaoResponsavelSacola.cs" />
-    <Compile Include="Responsavel.cs" />
-    <Compile Include="Status.cs" />
-    <Compile Include="Turma.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
