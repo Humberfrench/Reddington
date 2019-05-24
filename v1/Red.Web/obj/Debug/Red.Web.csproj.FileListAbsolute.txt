@@ -1,0 +1,194 @@
+C:\Desenvolvimento\Red\Red.Web\bin\Red.Web.dll.config
+C:\Desenvolvimento\Red\Red.Web\bin\Red.Web.dll
+C:\Desenvolvimento\Red\Red.Web\bin\Red.Web.pdb
+C:\Desenvolvimento\Red\Red.Web\bin\Antlr3.Runtime.dll
+C:\Desenvolvimento\Red\Red.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Desenvolvimento\Red\Red.Web\bin\Newtonsoft.Json.dll
+C:\Desenvolvimento\Red\Red.Web\bin\Ninject.dll
+C:\Desenvolvimento\Red\Red.Web\bin\Ninject.Web.Common.dll
+C:\Desenvolvimento\Red\Red.Web\bin\Ninject.Web.Mvc.dll
+C:\Desenvolvimento\Red\Red.Web\bin\Red.Application.dll
+C:\Desenvolvimento\Red\Red.Web\bin\Red.Application.ViewModel.dll
+C:\Desenvolvimento\Red\Red.Web\bin\Red.Domain.dll
+C:\Desenvolvimento\Red\Red.Web\bin\Red.DomainValidation.dll
+C:\Desenvolvimento\Red\Red.Web\bin\Red.Extensions.dll
+C:\Desenvolvimento\Red\Red.Web\bin\Red.Libray.dll
+C:\Desenvolvimento\Red\Red.Web\bin\Red.Repository.dll
+C:\Desenvolvimento\Red\Red.Web\bin\RestSharp.dll
+C:\Desenvolvimento\Red\Red.Web\bin\System.Net.Http.Formatting.dll
+C:\Desenvolvimento\Red\Red.Web\bin\System.Web.Helpers.dll
+C:\Desenvolvimento\Red\Red.Web\bin\System.Web.Http.dll
+C:\Desenvolvimento\Red\Red.Web\bin\System.Web.Mvc.dll
+C:\Desenvolvimento\Red\Red.Web\bin\System.Web.Optimization.dll
+C:\Desenvolvimento\Red\Red.Web\bin\System.Web.Razor.dll
+C:\Desenvolvimento\Red\Red.Web\bin\System.Web.Webpages.Deployment.dll
+C:\Desenvolvimento\Red\Red.Web\bin\System.Web.Webpages.dll
+C:\Desenvolvimento\Red\Red.Web\bin\System.Web.Webpages.Razor.dll
+C:\Desenvolvimento\Red\Red.Web\bin\WebActivatorEx.dll
+C:\Desenvolvimento\Red\Red.Web\bin\WebGrease.dll
+C:\Desenvolvimento\Red\Red.Web\bin\AutoMapper.dll
+C:\Desenvolvimento\Red\Red.Web\bin\NHibernate.dll
+C:\Desenvolvimento\Red\Red.Web\bin\FluentNHibernate.dll
+C:\Desenvolvimento\Red\Red.Web\bin\Dapper.dll
+C:\Desenvolvimento\Red\Red.Web\bin\Iesi.Collections.dll
+C:\Desenvolvimento\Red\Red.Web\bin\Red.Application.ViewModel.pdb
+C:\Desenvolvimento\Red\Red.Web\bin\Red.Application.pdb
+C:\Desenvolvimento\Red\Red.Web\bin\Red.DomainValidation.pdb
+C:\Desenvolvimento\Red\Red.Web\bin\Red.Domain.pdb
+C:\Desenvolvimento\Red\Red.Web\bin\Red.Extensions.pdb
+C:\Desenvolvimento\Red\Red.Web\bin\Red.Libray.pdb
+C:\Desenvolvimento\Red\Red.Web\bin\Red.Repository.pdb
+C:\Desenvolvimento\Red\Red.Web\bin\Antlr3.Runtime.pdb
+C:\Desenvolvimento\Red\Red.Web\bin\Newtonsoft.Json.xml
+C:\Desenvolvimento\Red\Red.Web\bin\Ninject.xml
+C:\Desenvolvimento\Red\Red.Web\bin\Ninject.Web.Common.xml
+C:\Desenvolvimento\Red\Red.Web\bin\Ninject.Web.Mvc.xml
+C:\Desenvolvimento\Red\Red.Web\bin\RestSharp.xml
+C:\Desenvolvimento\Red\Red.Web\bin\System.Net.Http.Formatting.xml
+C:\Desenvolvimento\Red\Red.Web\bin\System.Web.Http.xml
+C:\Desenvolvimento\Red\Red.Web\bin\System.Web.Optimization.xml
+C:\Desenvolvimento\Red\Red.Web\bin\System.Web.Razor.xml
+C:\Desenvolvimento\Red\Red.Web\bin\System.Web.Webpages.xml
+C:\Desenvolvimento\Red\Red.Web\bin\System.Web.Webpages.Deployment.xml
+C:\Desenvolvimento\Red\Red.Web\bin\System.Web.Webpages.Razor.xml
+C:\Desenvolvimento\Red\Red.Web\bin\System.Web.Helpers.xml
+C:\Desenvolvimento\Red\Red.Web\bin\System.Web.Mvc.xml
+C:\Desenvolvimento\Red\Red.Web\bin\AutoMapper.xml
+C:\Desenvolvimento\Red\Red.Web\bin\NHibernate.xml
+C:\Desenvolvimento\Red\Red.Web\bin\FluentNHibernate.pdb
+C:\Desenvolvimento\Red\Red.Web\bin\FluentNHibernate.xml
+C:\Desenvolvimento\Red\Red.Web\bin\Dapper.pdb
+C:\Desenvolvimento\Red\Red.Web\bin\Dapper.xml
+C:\Desenvolvimento\Red\Red.Web\bin\Iesi.Collections.xml
+C:\Desenvolvimento\Red\Red.Web\obj\Debug\Red.Web.csprojResolveAssemblyReference.cache
+C:\Desenvolvimento\Red\Red.Web\obj\Debug\Red.Web.dll
+C:\Desenvolvimento\Red\Red.Web\obj\Debug\Red.Web.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\AutoMapper.Net4.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Red.Web.dll.config
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Red.Web.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Red.Web.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Antlr3.Runtime.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Newtonsoft.Json.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Ninject.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Ninject.Web.Common.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Ninject.Web.Mvc.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Red.Application.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Red.Application.ViewModel.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Red.Domain.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Red.DomainValidation.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Red.Extensions.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Red.Library.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Red.Repository.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\RestSharp.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\System.Net.Http.Formatting.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\System.Web.Helpers.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\System.Web.Http.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\System.Web.Mvc.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\System.Web.Optimization.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\System.Web.Razor.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\System.Web.Webpages.Deployment.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\System.Web.Webpages.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\System.Web.Webpages.Razor.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\WebActivatorEx.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\WebGrease.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\AutoMapper.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\NHibernate.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\FluentNHibernate.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Dapper.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Iesi.Collections.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Red.Application.ViewModel.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Red.Application.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Red.DomainValidation.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Red.Domain.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Red.Extensions.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Red.Library.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Red.Repository.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Antlr3.Runtime.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Newtonsoft.Json.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Ninject.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Ninject.Web.Common.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Ninject.Web.Mvc.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\RestSharp.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\System.Net.Http.Formatting.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\System.Web.Http.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\System.Web.Optimization.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\System.Web.Razor.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\System.Web.Webpages.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\System.Web.Webpages.Deployment.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\System.Web.Webpages.Razor.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\System.Web.Helpers.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\System.Web.Mvc.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\AutoMapper.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\NHibernate.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\FluentNHibernate.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\FluentNHibernate.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Dapper.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Dapper.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\bin\Iesi.Collections.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\obj\Debug\Red.Web.csprojResolveAssemblyReference.cache
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\obj\Debug\Red.Web.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Web\obj\Debug\Red.Web.pdb
+C:\Humberto\Projetos\Red\Red.Web\bin\Red.Web.dll.config
+C:\Humberto\Projetos\Red\Red.Web\bin\Red.Web.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\Red.Web.pdb
+C:\Humberto\Projetos\Red\Red.Web\bin\Antlr3.Runtime.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\Newtonsoft.Json.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\Red.Application.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\Red.DomainValidation.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\Red.Extensions.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\Red.Ioc.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\Red.Library.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\SimpleInjector.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\SimpleInjector.Integration.Web.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\SimpleInjector.Integration.Web.Mvc.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\System.Net.Http.Formatting.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\System.Web.Helpers.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\System.Web.Http.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\System.Web.Mvc.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\System.Web.Optimization.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\System.Web.Razor.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\System.Web.Webpages.Deployment.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\System.Web.Webpages.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\System.Web.Webpages.Razor.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\WebActivator.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\WebActivatorEx.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\WebGrease.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\Red.Domain.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\AutoMapper.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\Red.Repository.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\NHibernate.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\FluentNHibernate.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\Dapper.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\Iesi.Collections.dll
+C:\Humberto\Projetos\Red\Red.Web\bin\Red.Application.pdb
+C:\Humberto\Projetos\Red\Red.Web\bin\Red.DomainValidation.pdb
+C:\Humberto\Projetos\Red\Red.Web\bin\Red.Extensions.pdb
+C:\Humberto\Projetos\Red\Red.Web\bin\Red.Ioc.pdb
+C:\Humberto\Projetos\Red\Red.Web\bin\Red.Library.pdb
+C:\Humberto\Projetos\Red\Red.Web\bin\Antlr3.Runtime.pdb
+C:\Humberto\Projetos\Red\Red.Web\bin\Newtonsoft.Json.xml
+C:\Humberto\Projetos\Red\Red.Web\bin\SimpleInjector.xml
+C:\Humberto\Projetos\Red\Red.Web\bin\SimpleInjector.Integration.Web.xml
+C:\Humberto\Projetos\Red\Red.Web\bin\SimpleInjector.Integration.Web.Mvc.xml
+C:\Humberto\Projetos\Red\Red.Web\bin\System.Net.Http.Formatting.xml
+C:\Humberto\Projetos\Red\Red.Web\bin\System.Web.Http.xml
+C:\Humberto\Projetos\Red\Red.Web\bin\System.Web.Optimization.xml
+C:\Humberto\Projetos\Red\Red.Web\bin\System.Web.Razor.xml
+C:\Humberto\Projetos\Red\Red.Web\bin\System.Web.Webpages.xml
+C:\Humberto\Projetos\Red\Red.Web\bin\System.Web.Webpages.Deployment.xml
+C:\Humberto\Projetos\Red\Red.Web\bin\System.Web.Webpages.Razor.xml
+C:\Humberto\Projetos\Red\Red.Web\bin\System.Web.Helpers.xml
+C:\Humberto\Projetos\Red\Red.Web\bin\System.Web.Mvc.xml
+C:\Humberto\Projetos\Red\Red.Web\bin\Red.Domain.pdb
+C:\Humberto\Projetos\Red\Red.Web\bin\AutoMapper.xml
+C:\Humberto\Projetos\Red\Red.Web\bin\Red.Repository.pdb
+C:\Humberto\Projetos\Red\Red.Web\bin\NHibernate.xml
+C:\Humberto\Projetos\Red\Red.Web\bin\FluentNHibernate.pdb
+C:\Humberto\Projetos\Red\Red.Web\bin\FluentNHibernate.xml
+C:\Humberto\Projetos\Red\Red.Web\bin\Dapper.xml
+C:\Humberto\Projetos\Red\Red.Web\bin\Iesi.Collections.xml
+C:\Humberto\Projetos\Red\Red.Web\obj\Debug\Red.Web.csprojResolveAssemblyReference.cache
+C:\Humberto\Projetos\Red\Red.Web\obj\Debug\Red.Web.dll
+C:\Humberto\Projetos\Red\Red.Web\obj\Debug\Red.Web.pdb

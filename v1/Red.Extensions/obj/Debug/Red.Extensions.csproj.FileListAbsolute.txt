@@ -1,0 +1,13 @@
+C:\Desenvolvimento\Red\Red.Extensions\bin\Debug\Red.Extensions.dll
+C:\Desenvolvimento\Red\Red.Extensions\bin\Debug\Red.Extensions.pdb
+C:\Desenvolvimento\Red\Red.Extensions\obj\Debug\Red.Extensions.dll
+C:\Desenvolvimento\Red\Red.Extensions\obj\Debug\Red.Extensions.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Extensions\bin\Debug\Red.Extensions.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Extensions\bin\Debug\Red.Extensions.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Extensions\obj\Debug\Red.Extensions.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Extensions\obj\Debug\Red.Extensions.pdb
+C:\Humberto\Projetos\Red\Red.Extensions\bin\Debug\Red.Extensions.dll
+C:\Humberto\Projetos\Red\Red.Extensions\bin\Debug\Red.Extensions.pdb
+C:\Humberto\Projetos\Red\Red.Extensions\obj\Debug\Red.Extensions.dll
+C:\Humberto\Projetos\Red\Red.Extensions\obj\Debug\Red.Extensions.pdb
+C:\Humberto\Projetos\Red\Red.Extensions\obj\Debug\Red.Extensions.csprojResolveAssemblyReference.cache

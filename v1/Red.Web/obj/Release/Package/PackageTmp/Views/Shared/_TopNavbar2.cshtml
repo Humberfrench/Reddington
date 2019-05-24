@@ -1,0 +1,66 @@
+﻿<div class="row border-bottom fc-bg">
+    <nav class="navbar navbar-static-top" role="navigation">
+        <div class="navbar-header">
+            <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                <i class="fa fa-reorder"></i>
+            </button>
+            <a href="#" class="navbar-brand">Red
+            </a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">Alunos<span class="caret"></span></a>
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a href="@Url.Action("Index","Aluno")">Alunos</a></li>
+                        <li><a href="@Url.Action("Ativos","Aluno")">Alunos - Ativos</a></li>
+                        <li><a href="@Url.Action("NaoAtivos","Aluno")">Alunos - Ativos</a></li>
+                        <li><a href="@Url.Action("Index","Responsavel")">Responsável</a></li>
+                        <li><a href="@Url.Action("Index","Evangelizador")">Evangelizador</a></li>
+                        <li><a href="@Url.Action("Index","Turma")">Turma</a></li>
+                        <li><a href="@Url.Action("CopiarTurma", "Turma")">Copiar Turma</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">Apoio<span class="caret"></span></a>
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a href="@Url.Action("Index", "AtividadePreferida")">Atividade Preferida</a></li>
+                        <li><a href="@Url.Action("Index", "Caracteristica")">Característica</a></li>
+                        <li><a href="@Url.Action("Index", "ProblemaSaude")">Problemas de Saúde</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">Outros<span class="caret"></span></a>
+                    <ul role="menu" class="dropdown-menu">
+                        @*<li><a href="@Url.Action("Index", "Colaborador")">Colaborador</a></li>
+                        <li><a href="@Url.Action("Index", "Kit")">Kits</a></li>
+                        <li><a href="@Url.Action("Index", "TipoItem")">Tipos de Itens</a></li>
+                        <li><a href="@Url.Action("Index", "Feriado")">Feriados</a></li>
+                        <li><a href="@Url.Action("Index", "Calcado")">Calçado</a></li>
+                        <li><a href="@Url.Action("Index", "Roupa")">Roupa</a></li>
+                        <li><a href="@Url.Action("Index", "StatusCrianca")">Status Criança</a></li>
+                        <li><a href="@Url.Action("Index", "StatusFamilia")">Status Família</a></li>
+                        <li><a href="@Url.Action("Index", "Nivel")">Nível de Presença</a></li>
+                        <li><a href="@Url.Action("Index", "TipoParentesco")">Relação / Parentesco</a></li>
+                        <li><a href="@Url.Action("Index", "Parametro")">Parâmetros do Sistema</a></li>*@
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">Relatórios<span class="caret"></span></a>
+                    <ul role="menu" class="dropdown-menu">
+                        @*<li><a href="@Url.Action("SacolasLivres", "Relatorios")">Lista Sacolas Livres</a></li>
+                        <li><a href="@Url.Action("SacolasLivres", "Relatorios")">Lista Sacolas Por Colaborador</a></li>*@
+                    </ul>
+                </li>
+
+            </ul>
+            <ul class="nav navbar-top-links navbar-right">
+                <li>
+                    <a href="#" style="display:none;">
+                        <i class="fa fa-sign-out"></i> Log out
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>

@@ -1,0 +1,23 @@
+﻿<div id="modalExclusao" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content animated">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Confirma Exclusão</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Deseja Excluir o Responsável Selecionada?<br />
+                    <b>Código: </b><span id="spnCodigo"></span><br />
+                    <b>Responsavel 1: </b><span id="spnNome1"></span><br />
+                    <b>Responsavel 2: </b><span id="spnNome2"></span><br />
+                    <input type="hidden" id="codigoExclusao" name="codigoExclusao" />
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+                <button type="button" class="btn btn-primary" onclick="Excluir()">Sim</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

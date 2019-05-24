@@ -1,0 +1,31 @@
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Application\bin\Release\AutoMapper.Net4.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Application\bin\Release\Red.Application.dll.config
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Application\bin\Release\Red.Application.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Application\bin\Release\Red.Application.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Application\bin\Release\AutoMapper.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Application\bin\Release\Red.Application.ViewModel.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Application\bin\Release\Red.Domain.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Application\bin\Release\Red.DomainValidation.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Application\bin\Release\Newtonsoft.Json.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Application\bin\Release\Red.Application.ViewModel.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Application\bin\Release\Red.DomainValidation.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Application\bin\Release\Red.Domain.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Application\bin\Release\AutoMapper.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Application\bin\Release\Newtonsoft.Json.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Application\obj\Release\Red.Application.csprojResolveAssemblyReference.cache
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Application\obj\Release\Red.Application.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Application\obj\Release\Red.Application.pdb
+C:\Humberto\Projetos\Red\Red.Application\bin\Release\Red.Application.dll.config
+C:\Humberto\Projetos\Red\Red.Application\bin\Release\Red.Application.dll
+C:\Humberto\Projetos\Red\Red.Application\bin\Release\Red.Application.pdb
+C:\Humberto\Projetos\Red\Red.Application\bin\Release\AutoMapper.dll
+C:\Humberto\Projetos\Red\Red.Application\bin\Release\Newtonsoft.Json.dll
+C:\Humberto\Projetos\Red\Red.Application\bin\Release\Red.Domain.dll
+C:\Humberto\Projetos\Red\Red.Application\bin\Release\Red.DomainValidation.dll
+C:\Humberto\Projetos\Red\Red.Application\bin\Release\Red.DomainValidation.pdb
+C:\Humberto\Projetos\Red\Red.Application\bin\Release\Red.Domain.pdb
+C:\Humberto\Projetos\Red\Red.Application\bin\Release\AutoMapper.xml
+C:\Humberto\Projetos\Red\Red.Application\bin\Release\Newtonsoft.Json.xml
+C:\Humberto\Projetos\Red\Red.Application\obj\Release\Red.Application.csprojResolveAssemblyReference.cache
+C:\Humberto\Projetos\Red\Red.Application\obj\Release\Red.Application.dll
+C:\Humberto\Projetos\Red\Red.Application\obj\Release\Red.Application.pdb
