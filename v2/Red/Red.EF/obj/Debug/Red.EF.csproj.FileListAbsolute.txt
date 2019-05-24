@@ -1,2 +1,14 @@
 C:\Humberto\Desenvolvimento\Reddington\v2\Red\Red.EF\obj\Debug\Red.EF.csprojAssemblyReference.cache
 C:\Humberto\Desenvolvimento\Reddington\v2\Red\Red.EF\obj\Debug\Red.EF.csproj.CoreCompileInputs.cache
+D:\Desenvolvimento\Sistemas\Red\v2\Red\Red.EF\bin\Debug\Red.EF.dll.config
+D:\Desenvolvimento\Sistemas\Red\v2\Red\Red.EF\bin\Debug\Red.EF.dll
+D:\Desenvolvimento\Sistemas\Red\v2\Red\Red.EF\bin\Debug\Red.EF.pdb
+D:\Desenvolvimento\Sistemas\Red\v2\Red\Red.EF\bin\Debug\EntityFramework.dll
+D:\Desenvolvimento\Sistemas\Red\v2\Red\Red.EF\bin\Debug\EntityFramework.SqlServer.dll
+D:\Desenvolvimento\Sistemas\Red\v2\Red\Red.EF\bin\Debug\EntityFramework.xml
+D:\Desenvolvimento\Sistemas\Red\v2\Red\Red.EF\bin\Debug\EntityFramework.SqlServer.xml
+D:\Desenvolvimento\Sistemas\Red\v2\Red\Red.EF\obj\Debug\Red.EF.csprojAssemblyReference.cache
+D:\Desenvolvimento\Sistemas\Red\v2\Red\Red.EF\obj\Debug\Red.EF.csproj.CoreCompileInputs.cache
+D:\Desenvolvimento\Sistemas\Red\v2\Red\Red.EF\obj\Debug\Red.EF.csproj.CopyComplete
+D:\Desenvolvimento\Sistemas\Red\v2\Red\Red.EF\obj\Debug\Red.EF.dll
+D:\Desenvolvimento\Sistemas\Red\v2\Red\Red.EF\obj\Debug\Red.EF.pdb

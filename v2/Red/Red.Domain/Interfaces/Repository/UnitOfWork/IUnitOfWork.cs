@@ -1,11 +1,7 @@
-﻿
-using Credpay.Tools.DomainValidator;
-
-namespace Credpay.BackOffice.Repository.Interfaces
+﻿namespace Red.Domain.Interfaces.Repository.UnitOfWork
 {
     public interface IUnitOfWork
     {
-        void BeginTransaction();
-        ValidationResult SaveChanges();
+        
     }
 }

@@ -52,11 +52,11 @@
     <Compile Include="Entity\Turma.cs" />
     <Compile Include="Interfaces\Repository\IAlunoRepository.cs" />
     <Compile Include="Interfaces\Repository\IRepositorioBase.cs" />
+    <Compile Include="Interfaces\Repository\UnitOfWork\IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Enum\" />
-    <Folder Include="Interfaces\Repository\UnitOfWork\" />
     <Folder Include="Interfaces\Services\" />
     <Folder Include="ObjectValue\" />
   </ItemGroup>
