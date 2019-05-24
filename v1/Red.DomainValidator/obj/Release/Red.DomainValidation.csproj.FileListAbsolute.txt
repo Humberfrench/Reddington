@@ -1,0 +1,14 @@
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.DomainValidator\bin\Release\Red.DomainValidation.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.DomainValidator\bin\Release\Red.DomainValidation.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.DomainValidator\bin\Release\Newtonsoft.Json.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.DomainValidator\bin\Release\Newtonsoft.Json.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.DomainValidator\obj\Release\Red.DomainValidation.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.DomainValidator\obj\Release\Red.DomainValidation.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.DomainValidator\obj\Release\Red.DomainValidation.csprojResolveAssemblyReference.cache
+C:\Humberto\Projetos\Red\Red.DomainValidator\bin\Release\Red.DomainValidation.dll
+C:\Humberto\Projetos\Red\Red.DomainValidator\bin\Release\Red.DomainValidation.pdb
+C:\Humberto\Projetos\Red\Red.DomainValidator\bin\Release\Newtonsoft.Json.dll
+C:\Humberto\Projetos\Red\Red.DomainValidator\bin\Release\Newtonsoft.Json.xml
+C:\Humberto\Projetos\Red\Red.DomainValidator\obj\Release\Red.DomainValidation.csprojResolveAssemblyReference.cache
+C:\Humberto\Projetos\Red\Red.DomainValidator\obj\Release\Red.DomainValidation.dll
+C:\Humberto\Projetos\Red\Red.DomainValidator\obj\Release\Red.DomainValidation.pdb

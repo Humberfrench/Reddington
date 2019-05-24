@@ -1,0 +1,32 @@
+C:\Desenvolvimento\Red\Red.Domain\bin\Debug\Red.Domain.dll.config
+C:\Desenvolvimento\Red\Red.Domain\bin\Debug\Red.Domain.dll
+C:\Desenvolvimento\Red\Red.Domain\bin\Debug\Red.Domain.pdb
+C:\Desenvolvimento\Red\Red.Domain\bin\Debug\Red.DomainValidation.dll
+C:\Desenvolvimento\Red\Red.Domain\bin\Debug\Newtonsoft.Json.dll
+C:\Desenvolvimento\Red\Red.Domain\bin\Debug\Red.DomainValidation.pdb
+C:\Desenvolvimento\Red\Red.Domain\bin\Debug\Newtonsoft.Json.xml
+C:\Desenvolvimento\Red\Red.Domain\obj\Debug\Red.Domain.csprojResolveAssemblyReference.cache
+C:\Desenvolvimento\Red\Red.Domain\obj\Debug\Red.Domain.dll
+C:\Desenvolvimento\Red\Red.Domain\obj\Debug\Red.Domain.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Domain\bin\Debug\Red.Domain.dll.config
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Domain\bin\Debug\Red.Domain.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Domain\bin\Debug\Red.Domain.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Domain\bin\Debug\Red.Application.ViewModel.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Domain\bin\Debug\Red.DomainValidation.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Domain\bin\Debug\Newtonsoft.Json.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Domain\bin\Debug\Red.Application.ViewModel.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Domain\bin\Debug\Red.DomainValidation.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Domain\bin\Debug\Newtonsoft.Json.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Domain\obj\Debug\Red.Domain.csprojResolveAssemblyReference.cache
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Domain\obj\Debug\Red.Domain.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Domain\obj\Debug\Red.Domain.pdb
+C:\Humberto\Projetos\Red\Red.Domain\bin\Debug\Red.Domain.dll.config
+C:\Humberto\Projetos\Red\Red.Domain\bin\Debug\Red.Domain.dll
+C:\Humberto\Projetos\Red\Red.Domain\bin\Debug\Red.Domain.pdb
+C:\Humberto\Projetos\Red\Red.Domain\bin\Debug\Red.DomainValidation.dll
+C:\Humberto\Projetos\Red\Red.Domain\bin\Debug\Newtonsoft.Json.dll
+C:\Humberto\Projetos\Red\Red.Domain\bin\Debug\Red.DomainValidation.pdb
+C:\Humberto\Projetos\Red\Red.Domain\bin\Debug\Newtonsoft.Json.xml
+C:\Humberto\Projetos\Red\Red.Domain\obj\Debug\Red.Domain.csprojResolveAssemblyReference.cache
+C:\Humberto\Projetos\Red\Red.Domain\obj\Debug\Red.Domain.dll
+C:\Humberto\Projetos\Red\Red.Domain\obj\Debug\Red.Domain.pdb

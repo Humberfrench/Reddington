@@ -1,0 +1,17 @@
+C:\Desenvolvimento\Red\Red.Application.ViewModel\bin\Debug\Red.Application.ViewModel.dll
+C:\Desenvolvimento\Red\Red.Application.ViewModel\bin\Debug\Red.Application.ViewModel.pdb
+C:\Desenvolvimento\Red\Red.Application.ViewModel\obj\Debug\Red.Application.ViewModel.dll
+C:\Desenvolvimento\Red\Red.Application.ViewModel\obj\Debug\Red.Application.ViewModel.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Application.ViewModel\bin\Debug\Red.Application.ViewModel.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Application.ViewModel\bin\Debug\Red.Application.ViewModel.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Application.ViewModel\bin\Debug\Newtonsoft.Json.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Application.ViewModel\bin\Debug\Newtonsoft.Json.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Application.ViewModel\obj\Debug\Red.Application.ViewModel.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Application.ViewModel\obj\Debug\Red.Application.ViewModel.pdb
+C:\Humberto\Projetos\Red\Red.Application.ViewModel\bin\Debug\Red.Application.ViewModel.dll
+C:\Humberto\Projetos\Red\Red.Application.ViewModel\bin\Debug\Red.Application.ViewModel.pdb
+C:\Humberto\Projetos\Red\Red.Application.ViewModel\bin\Debug\Newtonsoft.Json.dll
+C:\Humberto\Projetos\Red\Red.Application.ViewModel\bin\Debug\Newtonsoft.Json.xml
+C:\Humberto\Projetos\Red\Red.Application.ViewModel\obj\Debug\Red.Application.ViewModel.csprojResolveAssemblyReference.cache
+C:\Humberto\Projetos\Red\Red.Application.ViewModel\obj\Debug\Red.Application.ViewModel.dll
+C:\Humberto\Projetos\Red\Red.Application.ViewModel\obj\Debug\Red.Application.ViewModel.pdb

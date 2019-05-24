@@ -1,0 +1,52 @@
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\bin\Debug\Red.Libray.dll.config
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\bin\Debug\Red.Libray.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\bin\Debug\Red.Libray.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\bin\Debug\Antlr3.Runtime.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\bin\Debug\Newtonsoft.Json.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\bin\Debug\System.Web.Helpers.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\bin\Debug\System.Web.Mvc.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\bin\Debug\System.Web.Optimization.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\bin\Debug\System.Web.Razor.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\bin\Debug\System.Web.WebPages.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\bin\Debug\WebGrease.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\bin\Debug\Antlr3.Runtime.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\bin\Debug\Newtonsoft.Json.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\bin\Debug\System.Web.Helpers.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\bin\Debug\System.Web.Mvc.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\bin\Debug\System.Web.Optimization.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\bin\Debug\System.Web.Razor.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\bin\Debug\System.Web.WebPages.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\obj\Debug\Red.Libray.csprojResolveAssemblyReference.cache
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\obj\Debug\Red.Libray.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Libray\obj\Debug\Red.Libray.pdb
+C:\Desenvolvimento\Red\Red.Libray\bin\Debug\Red.Libray.dll.config
+C:\Desenvolvimento\Red\Red.Libray\bin\Debug\Red.Libray.dll
+C:\Desenvolvimento\Red\Red.Libray\bin\Debug\Red.Libray.pdb
+C:\Desenvolvimento\Red\Red.Libray\bin\Debug\Antlr3.Runtime.dll
+C:\Desenvolvimento\Red\Red.Libray\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Desenvolvimento\Red\Red.Libray\bin\Debug\Newtonsoft.Json.dll
+C:\Desenvolvimento\Red\Red.Libray\bin\Debug\System.Web.Helpers.dll
+C:\Desenvolvimento\Red\Red.Libray\bin\Debug\System.Web.Mvc.dll
+C:\Desenvolvimento\Red\Red.Libray\bin\Debug\System.Web.Optimization.dll
+C:\Desenvolvimento\Red\Red.Libray\bin\Debug\System.Web.Razor.dll
+C:\Desenvolvimento\Red\Red.Libray\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Desenvolvimento\Red\Red.Libray\bin\Debug\System.Web.WebPages.dll
+C:\Desenvolvimento\Red\Red.Libray\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Desenvolvimento\Red\Red.Libray\bin\Debug\WebGrease.dll
+C:\Desenvolvimento\Red\Red.Libray\bin\Debug\Antlr3.Runtime.pdb
+C:\Desenvolvimento\Red\Red.Libray\bin\Debug\Newtonsoft.Json.xml
+C:\Desenvolvimento\Red\Red.Libray\bin\Debug\System.Web.Helpers.xml
+C:\Desenvolvimento\Red\Red.Libray\bin\Debug\System.Web.Mvc.xml
+C:\Desenvolvimento\Red\Red.Libray\bin\Debug\System.Web.Optimization.xml
+C:\Desenvolvimento\Red\Red.Libray\bin\Debug\System.Web.Razor.xml
+C:\Desenvolvimento\Red\Red.Libray\bin\Debug\System.Web.WebPages.xml
+C:\Desenvolvimento\Red\Red.Libray\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Desenvolvimento\Red\Red.Libray\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Desenvolvimento\Red\Red.Libray\obj\Debug\Red.Libray.csprojResolveAssemblyReference.cache
+C:\Desenvolvimento\Red\Red.Libray\obj\Debug\Red.Libray.dll
+C:\Desenvolvimento\Red\Red.Libray\obj\Debug\Red.Libray.pdb

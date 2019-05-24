@@ -1,0 +1,6 @@
+C:\IB\Fase 2\Source\Rendimento.InternetBanking.Cliente.Infra.DomainValidation\bin\Debug\Rendimento.InternetBanking.Cliente.Infra.DomainValidation.dll
+C:\IB\Fase 2\Source\Rendimento.InternetBanking.Cliente.Infra.DomainValidation\bin\Debug\Rendimento.InternetBanking.Cliente.Infra.DomainValidation.pdb
+C:\IB\Fase 2\Source\Rendimento.InternetBanking.Cliente.Infra.DomainValidation\bin\Debug\Newtonsoft.Json.dll
+C:\IB\Fase 2\Source\Rendimento.InternetBanking.Cliente.Infra.DomainValidation\bin\Debug\Newtonsoft.Json.xml
+C:\IB\Fase 2\Source\Rendimento.InternetBanking.Cliente.Infra.DomainValidation\obj\Debug\Rendimento.InternetBanking.Cliente.Infra.DomainValidation.dll
+C:\IB\Fase 2\Source\Rendimento.InternetBanking.Cliente.Infra.DomainValidation\obj\Debug\Rendimento.InternetBanking.Cliente.Infra.DomainValidation.pdb

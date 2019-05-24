@@ -1,0 +1,10 @@
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Extensions\bin\Release\Red.Extensions.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Extensions\bin\Release\Red.Extensions.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Extensions\obj\Release\Red.Extensions.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Extensions\obj\Release\Red.Extensions.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Extensions\obj\Release\Red.Extensions.csprojResolveAssemblyReference.cache
+C:\Humberto\Projetos\Red\Red.Extensions\bin\Release\Red.Extensions.dll
+C:\Humberto\Projetos\Red\Red.Extensions\bin\Release\Red.Extensions.pdb
+C:\Humberto\Projetos\Red\Red.Extensions\obj\Release\Red.Extensions.csprojResolveAssemblyReference.cache
+C:\Humberto\Projetos\Red\Red.Extensions\obj\Release\Red.Extensions.dll
+C:\Humberto\Projetos\Red\Red.Extensions\obj\Release\Red.Extensions.pdb

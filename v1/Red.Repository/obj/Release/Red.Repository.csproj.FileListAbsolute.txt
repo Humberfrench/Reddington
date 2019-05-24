@@ -1,0 +1,45 @@
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Repository\bin\Release\Red.Repository.dll.config
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Repository\bin\Release\Red.Repository.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Repository\bin\Release\Red.Repository.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Repository\bin\Release\Dapper.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Repository\bin\Release\FluentNHibernate.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Repository\bin\Release\Iesi.Collections.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Repository\bin\Release\NHibernate.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Repository\bin\Release\Red.Application.ViewModel.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Repository\bin\Release\Red.Domain.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Repository\bin\Release\Red.DomainValidation.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Repository\bin\Release\Newtonsoft.Json.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Repository\bin\Release\Red.Application.ViewModel.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Repository\bin\Release\Red.Domain.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Repository\bin\Release\Dapper.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Repository\bin\Release\Dapper.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Repository\bin\Release\FluentNHibernate.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Repository\bin\Release\FluentNHibernate.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Repository\bin\Release\Iesi.Collections.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Repository\bin\Release\NHibernate.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Repository\bin\Release\Red.DomainValidation.pdb
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Repository\bin\Release\Newtonsoft.Json.xml
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Repository\obj\Release\Red.Repository.csprojResolveAssemblyReference.cache
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Repository\obj\Release\Red.Repository.dll
+C:\Users\humberto.almeida.ext\Documents\Visual Studio 2013\Projects\Red\Red.Repository\obj\Release\Red.Repository.pdb
+C:\Humberto\Projetos\Red\Red.Repository\bin\Release\Red.Repository.dll.config
+C:\Humberto\Projetos\Red\Red.Repository\bin\Release\Red.Repository.dll
+C:\Humberto\Projetos\Red\Red.Repository\bin\Release\Red.Repository.pdb
+C:\Humberto\Projetos\Red\Red.Repository\bin\Release\Dapper.dll
+C:\Humberto\Projetos\Red\Red.Repository\bin\Release\FluentNHibernate.dll
+C:\Humberto\Projetos\Red\Red.Repository\bin\Release\Iesi.Collections.dll
+C:\Humberto\Projetos\Red\Red.Repository\bin\Release\NHibernate.dll
+C:\Humberto\Projetos\Red\Red.Repository\bin\Release\Red.Domain.dll
+C:\Humberto\Projetos\Red\Red.Repository\bin\Release\Red.DomainValidation.dll
+C:\Humberto\Projetos\Red\Red.Repository\bin\Release\Newtonsoft.Json.dll
+C:\Humberto\Projetos\Red\Red.Repository\bin\Release\Red.Domain.pdb
+C:\Humberto\Projetos\Red\Red.Repository\bin\Release\Dapper.xml
+C:\Humberto\Projetos\Red\Red.Repository\bin\Release\FluentNHibernate.pdb
+C:\Humberto\Projetos\Red\Red.Repository\bin\Release\FluentNHibernate.xml
+C:\Humberto\Projetos\Red\Red.Repository\bin\Release\Iesi.Collections.xml
+C:\Humberto\Projetos\Red\Red.Repository\bin\Release\NHibernate.xml
+C:\Humberto\Projetos\Red\Red.Repository\bin\Release\Red.DomainValidation.pdb
+C:\Humberto\Projetos\Red\Red.Repository\bin\Release\Newtonsoft.Json.xml
+C:\Humberto\Projetos\Red\Red.Repository\obj\Release\Red.Repository.csprojResolveAssemblyReference.cache
+C:\Humberto\Projetos\Red\Red.Repository\obj\Release\Red.Repository.dll
+C:\Humberto\Projetos\Red\Red.Repository\obj\Release\Red.Repository.pdb
