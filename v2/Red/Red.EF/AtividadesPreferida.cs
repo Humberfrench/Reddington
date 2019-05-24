@@ -1,23 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
+using System;
+using System.Data.Entity.ModelConfiguration;
+
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Red.EF
 {
-    public partial class AtividadesPreferida
+    [Table("AtividadesPreferida")]
+    public class AtividadesPreferida
     {
-        public AtividadesPreferida()
-        {
-            AlunoAtividadePreferida = new HashSet<AlunoAtividadePreferida>();
-        }
 
-        public int AtividadesPreferidaId { get; set; }
+        [Key]
+        [Column(Name = "AtividadesPreferidaId", TypeName = "int")]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required]
+        [Display(Name = "Atividades Preferida Id")]
+        public int AtividadesPreferidaId { get; set; }
+        [Column(Name = "Descricao", TypeName = "varchar")]
+        [MaxLength(50)]
         [StringLength(50)]
+        [Required]
+        [Display(Name = "Descricao")]
         public string Descricao { get; set; }
-
-        [InverseProperty("AtividadePreferida")]
-        public virtual ICollection<AlunoAtividadePreferida> AlunoAtividadePreferida { get; set; }
     }
 }

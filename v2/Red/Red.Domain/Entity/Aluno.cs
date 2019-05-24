@@ -1,49 +1,57 @@
-﻿using System;
-using System.Collections.Generic;
+using System;
+using System.Data.Entity.ModelConfiguration;
+
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Red.EF
 {
-    public partial class Aluno
+    [Table("Aluno")]
+    public class Aluno
     {
-        public Aluno()
-        {
-            AlunoAtividadePreferida = new HashSet<AlunoAtividadePreferida>();
-            AlunoCaracteristica = new HashSet<AlunoCaracteristica>();
-            AlunoProblemaSaude = new HashSet<AlunoProblemaSaude>();
-            AlunoTurma = new HashSet<AlunoTurma>();
-        }
 
+        [Key]
+        [Column(Name = "AlunoId", TypeName = "int")]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Required]
+        [Display(Name = "Aluno Id")]
         public int AlunoId { get; set; }
-        [Required]
+        [Column(Name = "Nome", TypeName = "varchar")]
+        [MaxLength(50)]
         [StringLength(50)]
-        public string Nome { get; set; }
-        public int? ResponsavelId { get; set; }
-        [Column(TypeName = "date")]
-        public DateTime DataNascimento { get; set; }
         [Required]
+        [Display(Name = "Nome")]
+        public string Nome { get; set; }
+        [Column(Name = "ResponsavelId", TypeName = "int")]
+        [Display(Name = "Responsavel Id")]
+        public int? ResponsavelId { get; set; }
+        [Column(Name = "DataNascimento", TypeName = "date")]
+        [Required]
+        [Display(Name = "Data Nascimento")]
+        public DateTime DataNascimento { get; set; }
+        [Column(Name = "Sexo", TypeName = "varchar")]
+        [MaxLength(1)]
         [StringLength(1)]
+        [Required]
+        [Display(Name = "Sexo")]
         public string Sexo { get; set; }
+        [Column(Name = "GrupoDeJovens", TypeName = "bit")]
+        [Required]
+        [Display(Name = "Grupo De Jovens")]
         public bool GrupoDeJovens { get; set; }
+        [Column(Name = "Matriculado", TypeName = "bit")]
+        [Required]
+        [Display(Name = "Matriculado")]
         public bool Matriculado { get; set; }
+        [Column(Name = "StatusId", TypeName = "int")]
+        [Required]
+        [Display(Name = "Status Id")]
         public int StatusId { get; set; }
+        [Column(Name = "Observacao", TypeName = "varchar")]
+        [MaxLength(250)]
         [StringLength(250)]
+        [Display(Name = "Observacao")]
         public string Observacao { get; set; }
-
-        [ForeignKey("ResponsavelId")]
-        [InverseProperty("Aluno")]
-        public virtual Responsavel Responsavel { get; set; }
-        [ForeignKey("StatusId")]
-        [InverseProperty("Aluno")]
-        public virtual Status Status { get; set; }
-        [InverseProperty("Aluno")]
-        public virtual ICollection<AlunoAtividadePreferida> AlunoAtividadePreferida { get; set; }
-        [InverseProperty("Aluno")]
-        public virtual ICollection<AlunoCaracteristica> AlunoCaracteristica { get; set; }
-        [InverseProperty("Aluno")]
-        public virtual ICollection<AlunoProblemaSaude> AlunoProblemaSaude { get; set; }
-        [InverseProperty("Aluno")]
-        public virtual ICollection<AlunoTurma> AlunoTurma { get; set; }
     }
 }

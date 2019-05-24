@@ -1,28 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
+using System;
+using System.Data.Entity.ModelConfiguration;
+
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Red.EF
 {
-    public partial class Turma
+    [Table("Turma")]
+    public class Turma
     {
-        public Turma()
-        {
-            AlunoTurma = new HashSet<AlunoTurma>();
-        }
 
-        public int TurmaId { get; set; }
+        [Key]
+        [Column(Name = "TurmaId", TypeName = "int")]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required]
+        [Display(Name = "Turma Id")]
+        public int TurmaId { get; set; }
+        [Column(Name = "NomeSala", TypeName = "varchar")]
+        [MaxLength(50)]
         [StringLength(50)]
+        [Required]
+        [Display(Name = "Nome Sala")]
         public string NomeSala { get; set; }
+        [Column(Name = "EvangelizadorId", TypeName = "int")]
+        [Required]
+        [Display(Name = "Evangelizador Id")]
         public int EvangelizadorId { get; set; }
+        [Column(Name = "Ano", TypeName = "int")]
+        [Required]
+        [Display(Name = "Ano")]
         public int Ano { get; set; }
-
-        [ForeignKey("EvangelizadorId")]
-        [InverseProperty("Turma")]
-        public virtual Evangelizador Evangelizador { get; set; }
-        [InverseProperty("Turma")]
-        public virtual ICollection<AlunoTurma> AlunoTurma { get; set; }
     }
 }

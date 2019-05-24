@@ -31,6 +31,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -50,17 +56,22 @@
     <Compile Include="AlunoTurma.cs" />
     <Compile Include="AtividadesPreferida.cs" />
     <Compile Include="Caracteristica.cs" />
-    <Compile Include="Dbred2Context.cs" />
+    <Compile Include="RedContext.cs" />
     <Compile Include="Evangelizador.cs" />
     <Compile Include="ProblemasSaude.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RelacaoCricancaSacola.cs" />
+    <Compile Include="RelacaoResponsavelSacola.cs" />
     <Compile Include="Responsavel.cs" />
     <Compile Include="Status.cs" />
     <Compile Include="Turma.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="efpt.config.json" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

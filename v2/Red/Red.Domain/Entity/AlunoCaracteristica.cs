@@ -1,20 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
+using System;
+using System.Data.Entity.ModelConfiguration;
+
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Red.EF
 {
-    public partial class AlunoCaracteristica
+    [Table("AlunoCaracteristica")]
+    public class AlunoCaracteristica
     {
-        public int AlunoId { get; set; }
-        public int CaracteristicaId { get; set; }
 
-        [ForeignKey("AlunoId")]
-        [InverseProperty("AlunoCaracteristica")]
-        public virtual Aluno Aluno { get; set; }
-        [ForeignKey("CaracteristicaId")]
-        [InverseProperty("AlunoCaracteristica")]
-        public virtual Caracteristica Caracteristica { get; set; }
+        [Key]
+        [Column(Name = "AlunoId", TypeName = "int", Order = 1)]
+        [Required]
+        [Display(Name = "Aluno Id")]
+        public int AlunoId { get; set; }
+        [Key]
+        [Column(Name = "CaracteristicaId", TypeName = "int", Order = 2)]
+        [Required]
+        [Display(Name = "Caracteristica Id")]
+        public int CaracteristicaId { get; set; }
     }
 }
