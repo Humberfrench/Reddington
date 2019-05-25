@@ -17,3 +17,11 @@ Red.Repository/bin/
 Red.Web/obj/
 v2/Red/.vs/Red/v15/Server/sqlite3/storage.ide-wal
 v2/Red/.vs/Red/v15/Server/sqlite3/storage.ide-shm
+v2/.vs/
+v2/Red.Domain/bin/
+v2/Red.Domain/obj/
+v2/Red.EF/bin/
+v2/Red.EF/obj/
+v2/Red.Repository/bin/
+v2/Red.Repository/obj/
+v2/Red.Services/obj/

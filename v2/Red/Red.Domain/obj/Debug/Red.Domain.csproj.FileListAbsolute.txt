@@ -1,9 +1,0 @@
-C:\Humberto\Desenvolvimento\Reddington\v2\Red\Red.Domain\obj\Debug\Red.Domain.csprojAssemblyReference.cache
-C:\Humberto\Desenvolvimento\Reddington\v2\Red\Red.Domain\obj\Debug\Red.Domain.csproj.CoreCompileInputs.cache
-D:\Desenvolvimento\Sistemas\Red\v2\Red\Red.Domain\bin\Debug\Red.Domain.dll.config
-D:\Desenvolvimento\Sistemas\Red\v2\Red\Red.Domain\bin\Debug\Red.Domain.dll
-D:\Desenvolvimento\Sistemas\Red\v2\Red\Red.Domain\bin\Debug\Red.Domain.pdb
-D:\Desenvolvimento\Sistemas\Red\v2\Red\Red.Domain\obj\Debug\Red.Domain.csproj.CoreCompileInputs.cache
-D:\Desenvolvimento\Sistemas\Red\v2\Red\Red.Domain\obj\Debug\Red.Domain.dll
-D:\Desenvolvimento\Sistemas\Red\v2\Red\Red.Domain\obj\Debug\Red.Domain.pdb
-D:\Desenvolvimento\Sistemas\Red\v2\Red\Red.Domain\obj\Debug\Red.Domain.csprojAssemblyReference.cache

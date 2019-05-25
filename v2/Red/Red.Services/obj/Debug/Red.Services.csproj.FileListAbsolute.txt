@@ -1,5 +1,0 @@
-D:\Desenvolvimento\Sistemas\Red\v2\Red\Red.Services\bin\Debug\Red.Services.dll
-D:\Desenvolvimento\Sistemas\Red\v2\Red\Red.Services\bin\Debug\Red.Services.pdb
-D:\Desenvolvimento\Sistemas\Red\v2\Red\Red.Services\obj\Debug\Red.Services.csproj.CoreCompileInputs.cache
-D:\Desenvolvimento\Sistemas\Red\v2\Red\Red.Services\obj\Debug\Red.Services.dll
-D:\Desenvolvimento\Sistemas\Red\v2\Red\Red.Services\obj\Debug\Red.Services.pdb
