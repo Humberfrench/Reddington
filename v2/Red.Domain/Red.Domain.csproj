@@ -63,5 +63,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\French-Tools\French.Tools.DomainValidator\French.Tools.DomainValidator.csproj">
+      <Project>{66b30b03-5766-40b8-b7b3-50b61aa8ac0e}</Project>
+      <Name>French.Tools.DomainValidator</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

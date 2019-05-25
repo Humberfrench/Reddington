@@ -68,6 +68,18 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\..\..\French-Tools\French.Tools.DomainValidator\French.Tools.DomainValidator.csproj">
+      <Project>{66b30b03-5766-40b8-b7b3-50b61aa8ac0e}</Project>
+      <Name>French.Tools.DomainValidator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\French-Tools\French.Tools.Extensions\French.Tools.Extensions.csproj">
+      <Project>{2474f39f-cfbf-430f-9c4d-e898c6a96486}</Project>
+      <Name>French.Tools.Extensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\French-Tools\French.Tools.Library\French.Tools.Library.csproj">
+      <Project>{bdd9cfb7-0a84-4af1-ae80-91eb661706a2}</Project>
+      <Name>French.Tools.Library</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Red.Domain\Red.Domain.csproj">
       <Project>{7d842fae-6b2e-4cf3-b145-050050ec88fb}</Project>
       <Name>Red.Domain</Name>
