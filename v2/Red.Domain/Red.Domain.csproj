@@ -51,14 +51,23 @@
     <Compile Include="Entity\Status.cs" />
     <Compile Include="Entity\Turma.cs" />
     <Compile Include="Interfaces\Repository\IAlunoRepository.cs" />
+    <Compile Include="Interfaces\Repository\IAtividadePreferidaRepository.cs" />
+    <Compile Include="Interfaces\Repository\ICaracteristicaRepository.cs" />
+    <Compile Include="Interfaces\Repository\IEvangelizadorRepository.cs" />
+    <Compile Include="Interfaces\Repository\IProblemaSaudeRepository.cs" />
     <Compile Include="Interfaces\Repository\IRepositorioBase.cs" />
+    <Compile Include="Interfaces\Repository\IRepositoryBase.cs" />
+    <Compile Include="Interfaces\Repository\IResponsavelRepository.cs" />
+    <Compile Include="Interfaces\Repository\IStatusRepository.cs" />
+    <Compile Include="Interfaces\Repository\ITurmaRepository.cs" />
     <Compile Include="Interfaces\Repository\UnitOfWork\IUnitOfWork.cs" />
+    <Compile Include="ObjectValue\Alunos.cs" />
+    <Compile Include="ObjectValue\EvangelizadorAluno.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Enum\" />
     <Folder Include="Interfaces\Services\" />
-    <Folder Include="ObjectValue\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -15,7 +15,7 @@ namespace Red.Repository.UnitOfWork
         private readonly RedContext dbContext;
         private readonly ValidationResult validationResult;
 
-        private bool _disposed;
+        private bool disposed;
 
         public UnitOfWork(IContextManager contextManager)
         {
@@ -25,9 +25,10 @@ namespace Red.Repository.UnitOfWork
 
         public void BeginTransaction()
         {
-            this._disposed = false;
+            this.disposed = false;
         }
-        public 
+
+        public void Dispose()
         {
             this.Dispose(true);
             GC.SuppressFinalize(this);
@@ -88,14 +89,15 @@ namespace Red.Repository.UnitOfWork
 
         protected virtual void Dispose(bool disposing)
         {
-            if (!this._disposed)
+            if (!this.disposed)
             {
                 if (disposing)
                 {
                     this.dbContext.Dispose();
                 }
             }
-            this._disposed = true;
+            this.disposed = true;
         }
+
     }
 }
