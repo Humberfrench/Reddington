@@ -2,7 +2,7 @@
 
 namespace Red.Domain.Interfaces.Repository
 {
-    public interface IAlunoRepository : IRepositorioBase<Aluno>
+    public interface IAlunoRepository : IRepositoryBase<Aluno>
     {
         
     }

@@ -60,6 +60,13 @@
     <Compile Include="Interfaces\Repository\IStatusRepository.cs" />
     <Compile Include="Interfaces\Repository\ITurmaRepository.cs" />
     <Compile Include="Interfaces\Repository\UnitOfWork\IUnitOfWork.cs" />
+    <Compile Include="Interfaces\Services\IResponsavelService.cs" />
+    <Compile Include="Interfaces\Services\IProblemasDeSaudeService.cs" />
+    <Compile Include="Interfaces\Services\ICaracteristicaService.cs" />
+    <Compile Include="Interfaces\Services\IEvangelizadorService.cs" />
+    <Compile Include="Interfaces\Services\ITurmaService.cs" />
+    <Compile Include="Interfaces\Services\IStatusService.cs" />
+    <Compile Include="Interfaces\Services\IAtividadesPreferidasService.cs" />
     <Compile Include="Interfaces\Services\IAlunoService.cs" />
     <Compile Include="Interfaces\Services\IServiceBase.cs" />
     <Compile Include="ObjectValue\Alunos.cs" />

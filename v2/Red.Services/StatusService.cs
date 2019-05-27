@@ -9,13 +9,13 @@ using Red.Domain.Interfaces.Services;
 
 namespace Red.Services
 {
-    public class AlunoService : ServiceBase<Aluno>, IAlunoService
+    public class StatusService : ServiceBase<Status>, IStatusService
     {
-        private readonly IAlunoRepository repAluno;
+        private readonly IStatusRepository repStatus;
 
-        public AlunoService(IAlunoRepository repAluno) : base(repAluno)
+        public StatusService(IStatusRepository repStatus) : base(repStatus)
         {
-            this.repAluno = repAluno;
+            this.repStatus = repStatus;
         }
     }
 }
