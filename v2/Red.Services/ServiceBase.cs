@@ -8,31 +8,31 @@ namespace Red.Services
 {
     public class ServiceBase<TEntity> : IDisposable, IServiceBase<TEntity> where TEntity : class
     {
-        private readonly IRepositoryBase<TEntity> _repository;
+        private readonly IRepositoryBase<TEntity> repository;
 
         public ServiceBase(IRepositoryBase<TEntity> repository)
         {
-            _repository = repository;
+            this.repository = repository;
         }
 
         public void Adicionar(TEntity obj)
         {
-            _repository.Adicionar(obj);
+            repository.Adicionar(obj);
         }
 
         public IEnumerable<TEntity> ObterTodos()
         {
-            return _repository.ObterTodos();
+            return repository.ObterTodos();
         }
 
         public TEntity ObterPorId(int id)
         {
-            return _repository.ObterPorId(id);
+            return repository.ObterPorId(id);
         }
 
         public void Atualizar(TEntity obj)
         {
-            _repository.Atualizar(obj);
+            repository.Atualizar(obj);
         }
 
         public void Dispose()
@@ -42,7 +42,7 @@ namespace Red.Services
 
         public IEnumerable<TEntity> Pesquisar(Expression<Func<TEntity, bool>> predicate)
         {
-            return _repository.Pesquisar(predicate);
+            return repository.Pesquisar(predicate);
         }
     }
 }

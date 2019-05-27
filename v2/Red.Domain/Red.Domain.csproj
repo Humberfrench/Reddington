@@ -60,6 +60,7 @@
     <Compile Include="Interfaces\Repository\IStatusRepository.cs" />
     <Compile Include="Interfaces\Repository\ITurmaRepository.cs" />
     <Compile Include="Interfaces\Repository\UnitOfWork\IUnitOfWork.cs" />
+    <Compile Include="Interfaces\Services\IAlunoService.cs" />
     <Compile Include="Interfaces\Services\IServiceBase.cs" />
     <Compile Include="ObjectValue\Alunos.cs" />
     <Compile Include="ObjectValue\EvangelizadorAluno.cs" />
