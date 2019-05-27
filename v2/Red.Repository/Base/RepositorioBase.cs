@@ -83,7 +83,7 @@ namespace Red.Repository.Base
             return this.DbSet.Where(predicate);
         }
 
-        public virtual void Remover(TEntidade obj)
+        public virtual void Excluir(TEntidade obj)
         {
             var entry = this.Context.Entry(obj);
             this.DbSet.Remove(obj);

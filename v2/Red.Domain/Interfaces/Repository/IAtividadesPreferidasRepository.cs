@@ -2,7 +2,7 @@
 
 namespace Red.Domain.Interfaces.Repository
 {
-    public interface IAtividadePreferidaRepository : IRepositoryBase<AtividadesPreferida>
+    public interface IAtividadesPreferidasRepository : IRepositoryBase<AtividadesPreferidas>
     {
          
     }

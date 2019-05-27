@@ -5,11 +5,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Red.Domain.Entity
 {
     [Table("ProblemasSaude")]
-    public class ProblemasSaude
+    public class ProblemasDeSaude
     {
         private IList<Aluno> aluno;
 
-        public ProblemasSaude()
+        public ProblemasDeSaude()
         {
             aluno = new List<Aluno>();
         }

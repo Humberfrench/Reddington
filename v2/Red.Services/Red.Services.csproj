@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>78be0f56-94a9-4693-8a0f-e4cee2999e2a</ProjectGuid>
+    <ProjectGuid>{78BE0F56-94A9-4693-8A0F-E4CEE2999E2A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Red.Services</RootNamespace>
@@ -31,24 +31,37 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\French-Tools\French.Tools.DomainValidator\French.Tools.DomainValidator.csproj">
+      <Project>{66b30b03-5766-40b8-b7b3-50b61aa8ac0e}</Project>
+      <Name>French.Tools.DomainValidator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\French-Tools\French.Tools.Extensions\French.Tools.Extensions.csproj">
+      <Project>{2474f39f-cfbf-430f-9c4d-e898c6a96486}</Project>
+      <Name>French.Tools.Extensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\French-Tools\French.Tools.Library\French.Tools.Library.csproj">
+      <Project>{bdd9cfb7-0a84-4af1-ae80-91eb661706a2}</Project>
+      <Name>French.Tools.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Red.Domain\Red.Domain.csproj">
+      <Project>{7d842fae-6b2e-4cf3-b145-050050ec88fb}</Project>
+      <Name>Red.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- </Project>
+</Project>

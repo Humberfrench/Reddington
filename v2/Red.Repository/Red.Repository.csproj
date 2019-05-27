@@ -53,6 +53,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TurmaRepository.cs" />
+    <Compile Include="StatusRepository.cs" />
+    <Compile Include="ProblemasDeSaudeRepository.cs" />
+    <Compile Include="ResponsavelRepository.cs" />
+    <Compile Include="EvangelizadorRepository.cs" />
+    <Compile Include="CaracteristicaRepository.cs" />
+    <Compile Include="AtividadesPreferidaRepository.cs" />
     <Compile Include="AlunoRepository.cs" />
     <Compile Include="Base\RepositorioBase.cs" />
     <Compile Include="Context\ContextManager.cs" />

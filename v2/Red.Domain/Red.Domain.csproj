@@ -43,31 +43,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entity\Aluno.cs" />
-    <Compile Include="Entity\AtividadesPreferida.cs" />
+    <Compile Include="Entity\AtividadesPreferidas.cs" />
     <Compile Include="Entity\Caracteristica.cs" />
     <Compile Include="Entity\Evangelizador.cs" />
-    <Compile Include="Entity\ProblemasSaude.cs" />
+    <Compile Include="Entity\ProblemasDeSaude.cs" />
     <Compile Include="Entity\Responsavel.cs" />
     <Compile Include="Entity\Status.cs" />
     <Compile Include="Entity\Turma.cs" />
     <Compile Include="Interfaces\Repository\IAlunoRepository.cs" />
-    <Compile Include="Interfaces\Repository\IAtividadePreferidaRepository.cs" />
+    <Compile Include="Interfaces\Repository\IAtividadesPreferidasRepository.cs" />
     <Compile Include="Interfaces\Repository\ICaracteristicaRepository.cs" />
     <Compile Include="Interfaces\Repository\IEvangelizadorRepository.cs" />
-    <Compile Include="Interfaces\Repository\IProblemaSaudeRepository.cs" />
-    <Compile Include="Interfaces\Repository\IRepositorioBase.cs" />
+    <Compile Include="Interfaces\Repository\IProblemasDeSaudeRepository.cs" />
     <Compile Include="Interfaces\Repository\IRepositoryBase.cs" />
     <Compile Include="Interfaces\Repository\IResponsavelRepository.cs" />
     <Compile Include="Interfaces\Repository\IStatusRepository.cs" />
     <Compile Include="Interfaces\Repository\ITurmaRepository.cs" />
     <Compile Include="Interfaces\Repository\UnitOfWork\IUnitOfWork.cs" />
+    <Compile Include="Interfaces\Services\IServiceBase.cs" />
     <Compile Include="ObjectValue\Alunos.cs" />
     <Compile Include="ObjectValue\EvangelizadorAluno.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Enum\" />
-    <Folder Include="Interfaces\Services\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

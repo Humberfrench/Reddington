@@ -2,7 +2,7 @@
 
 namespace Red.Domain.Interfaces.Repository
 {
-    public interface IProblemaSaudeRepository : IRepositoryBase<ProblemasSaude>
+    public interface IProblemasDeSaudeRepository : IRepositoryBase<ProblemasDeSaude>
     {
          
     }

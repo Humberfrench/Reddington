@@ -8,16 +8,16 @@ namespace Red.Domain.Entity
     [Table("Aluno")]
     public partial class Aluno
     {
-        private IList<AtividadesPreferida> atividadesPreferida;
+        private IList<AtividadesPreferidas> atividadesPreferida;
         private IList<Caracteristica> caracteristica;
-        private IList<ProblemasSaude> problemasSaude;
+        private IList<ProblemasDeSaude> problemasSaude;
         private IList<Turma> turma;
 
         public Aluno()
         {
-            atividadesPreferida = new List<AtividadesPreferida>();
+            atividadesPreferida = new List<AtividadesPreferidas>();
             caracteristica = new List<Caracteristica>();
-            problemasSaude = new List<ProblemasSaude>();
+            problemasSaude = new List<ProblemasDeSaude>();
             turma = new List<Turma>();
         }
 
@@ -49,7 +49,7 @@ namespace Red.Domain.Entity
 
         public virtual Status Status { get; set; }
 
-        public virtual IList<AtividadesPreferida> AtividadesPreferida
+        public virtual IList<AtividadesPreferidas> AtividadesPreferida
         {
             get => atividadesPreferida;
             set => atividadesPreferida = value;
@@ -61,7 +61,7 @@ namespace Red.Domain.Entity
             set => caracteristica = value;
         }
 
-        public virtual IList<ProblemasSaude> ProblemasSaude
+        public virtual IList<ProblemasDeSaude> ProblemasSaude
         {
             get => problemasSaude;
             set => problemasSaude = value;
