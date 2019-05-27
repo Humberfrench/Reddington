@@ -19,13 +19,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Services", "4 - Service
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Red.Services", "Red.Services\Red.Services.csproj", "{78BE0F56-94A9-4693-8A0F-E4CEE2999E2A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - Infra", "6 - Infra", "{A0C051F8-8908-4842-B0A9-28200F75F0B5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7 - Infra Externa", "7 - Infra Externa", "{A0C051F8-8908-4842-B0A9-28200F75F0B5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "French.Tools.DomainValidator", "..\..\French-Tools\French.Tools.DomainValidator\French.Tools.DomainValidator.csproj", "{66B30B03-5766-40B8-B7B3-50B61AA8AC0E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "French.Tools.Extensions", "..\..\French-Tools\French.Tools.Extensions\French.Tools.Extensions.csproj", "{2474F39F-CFBF-430F-9C4D-E898C6A96486}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "French.Tools.Library", "..\..\French-Tools\French.Tools.Library\French.Tools.Library.csproj", "{BDD9CFB7-0A84-4AF1-AE80-91EB661706A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{DA14E4AB-1C4C-4BA1-B29C-A8FC3ED20FE0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - Infra", "6 - Infra", "{15C86018-5DAD-44AB-ACB3-8F6777CBD791}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Red.Ioc", "Red.Ioc\Red.Ioc.csproj", "{C479F380-7F60-441B-BFAF-8B99AF19CC9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Red.Application", "Red.Application\Red.Application.csproj", "{9BCF699F-3146-462A-AF7D-7DC8EE4C321F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +69,14 @@ Global
 		{BDD9CFB7-0A84-4AF1-AE80-91EB661706A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDD9CFB7-0A84-4AF1-AE80-91EB661706A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDD9CFB7-0A84-4AF1-AE80-91EB661706A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C479F380-7F60-441B-BFAF-8B99AF19CC9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C479F380-7F60-441B-BFAF-8B99AF19CC9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C479F380-7F60-441B-BFAF-8B99AF19CC9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C479F380-7F60-441B-BFAF-8B99AF19CC9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BCF699F-3146-462A-AF7D-7DC8EE4C321F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BCF699F-3146-462A-AF7D-7DC8EE4C321F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BCF699F-3146-462A-AF7D-7DC8EE4C321F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BCF699F-3146-462A-AF7D-7DC8EE4C321F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +89,8 @@ Global
 		{66B30B03-5766-40B8-B7B3-50B61AA8AC0E} = {A0C051F8-8908-4842-B0A9-28200F75F0B5}
 		{2474F39F-CFBF-430F-9C4D-E898C6A96486} = {A0C051F8-8908-4842-B0A9-28200F75F0B5}
 		{BDD9CFB7-0A84-4AF1-AE80-91EB661706A2} = {A0C051F8-8908-4842-B0A9-28200F75F0B5}
+		{C479F380-7F60-441B-BFAF-8B99AF19CC9E} = {15C86018-5DAD-44AB-ACB3-8F6777CBD791}
+		{9BCF699F-3146-462A-AF7D-7DC8EE4C321F} = {DA14E4AB-1C4C-4BA1-B29C-A8FC3ED20FE0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {80AFF034-AF42-4E48-9DCA-8FB1979B801A}

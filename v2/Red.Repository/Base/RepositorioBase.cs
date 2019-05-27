@@ -12,7 +12,7 @@ using Red.Repository.Interface;
 
 namespace Red.Repository.Base
 {
-    public class RepositorioBase<TEntidade> : IRepositorioBase<TEntidade> where TEntidade : class
+    public class RepositorioBase<TEntidade> : IRepositoryBase<TEntidade> where TEntidade : class
     {
         protected readonly RedContext Context;
         protected IDbSet<TEntidade> DbSet;

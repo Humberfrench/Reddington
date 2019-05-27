@@ -1,0 +1,5 @@
+D:\Desenvolvimento\Sistemas\Red\v2\Red.Ioc\bin\Debug\Red.Ioc.dll
+D:\Desenvolvimento\Sistemas\Red\v2\Red.Ioc\bin\Debug\Red.Ioc.pdb
+D:\Desenvolvimento\Sistemas\Red\v2\Red.Ioc\obj\Debug\Red.Ioc.csproj.CoreCompileInputs.cache
+D:\Desenvolvimento\Sistemas\Red\v2\Red.Ioc\obj\Debug\Red.Ioc.dll
+D:\Desenvolvimento\Sistemas\Red\v2\Red.Ioc\obj\Debug\Red.Ioc.pdb
