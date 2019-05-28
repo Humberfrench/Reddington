@@ -44,7 +44,7 @@ namespace Red.Ioc
             container.Register<IAlunoService, AlunoService>(Lifestyle.Scoped);
             container.Register<IAlunoRepository, AlunoRepository>(Lifestyle.Scoped);
 
-            container.Register<IAtividadePreferidaServiceApp, AtividadePreferidaServiceApp>(Lifestyle.Scoped);
+            container.Register<IAtividadesPreferidasServiceApp, AtividadesPreferidasServiceApp>(Lifestyle.Scoped);
             container.Register<IAtividadesPreferidasService, AtividadesPreferidasService>(Lifestyle.Scoped);
             container.Register<IAtividadesPreferidasRepository, AtividadesPreferidasRepository>(Lifestyle.Scoped);
 
@@ -56,7 +56,7 @@ namespace Red.Ioc
             container.Register<IEvangelizadorService, EvangelizadorService>(Lifestyle.Scoped);
             container.Register<IEvangelizadorRepository, EvangelizadorRepository>(Lifestyle.Scoped);
 
-            container.Register<IProblemaSaudeServiceApp, IProblemaSaudeServiceApp>(Lifestyle.Scoped);
+            container.Register<IProblemasDeSaudeServiceApp, IProblemasDeSaudeServiceApp>(Lifestyle.Scoped);
             container.Register<IProblemasDeSaudeService, IProblemasDeSaudeService>(Lifestyle.Scoped);
             container.Register<IProblemasDeSaudeRepository, IProblemasDeSaudeRepository>(Lifestyle.Scoped);
 

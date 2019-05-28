@@ -35,6 +35,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Red.Ioc", "Red.Ioc\Red.Ioc.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Red.Application", "Red.Application\Red.Application.csproj", "{9BCF699F-3146-462A-AF7D-7DC8EE4C321F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Red.Web", "Red.Web\Red.Web.csproj", "{83DE0576-C71A-4F60-804C-49B1052068F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Web", "1 - Web", "{DC6B5161-68EE-4513-91EB-C2F783322DBA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +81,10 @@ Global
 		{9BCF699F-3146-462A-AF7D-7DC8EE4C321F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BCF699F-3146-462A-AF7D-7DC8EE4C321F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BCF699F-3146-462A-AF7D-7DC8EE4C321F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83DE0576-C71A-4F60-804C-49B1052068F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83DE0576-C71A-4F60-804C-49B1052068F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83DE0576-C71A-4F60-804C-49B1052068F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83DE0576-C71A-4F60-804C-49B1052068F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -91,6 +99,7 @@ Global
 		{BDD9CFB7-0A84-4AF1-AE80-91EB661706A2} = {A0C051F8-8908-4842-B0A9-28200F75F0B5}
 		{C479F380-7F60-441B-BFAF-8B99AF19CC9E} = {15C86018-5DAD-44AB-ACB3-8F6777CBD791}
 		{9BCF699F-3146-462A-AF7D-7DC8EE4C321F} = {DA14E4AB-1C4C-4BA1-B29C-A8FC3ED20FE0}
+		{83DE0576-C71A-4F60-804C-49B1052068F4} = {DC6B5161-68EE-4513-91EB-C2F783322DBA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {80AFF034-AF42-4E48-9DCA-8FB1979B801A}
