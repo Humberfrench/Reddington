@@ -4,7 +4,7 @@ using French.Tools.DomainValidator;
 
 namespace Red.Application.Interfaces
 {
-    public interface IResponsavelServiceApp : IServiceBase
+    public interface IResponsavelServiceApp : IServiceBaseApp<ResponsavelViewModel>
     {
     }
 }

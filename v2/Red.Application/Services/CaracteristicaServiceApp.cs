@@ -24,5 +24,24 @@ namespace Red.Application.Services
             GC.SuppressFinalize(this);
         }
 
+        public IList<CaracteristicaViewModel> ObterTodos()
+        {
+            throw new NotImplementedException();
+        }
+
+        public CaracteristicaViewModel ObterPorId(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ValidationResult Gravar(CaracteristicaViewModel item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ValidationResult Excluir(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

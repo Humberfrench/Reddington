@@ -4,7 +4,7 @@ using French.Tools.DomainValidator;
 
 namespace Red.Application.Interfaces
 {
-    public interface ITurmaServiceApp : IServiceBase
+    public interface ITurmaServiceApp : IServiceBaseApp<TurmaViewModel>
     { 
 
     }

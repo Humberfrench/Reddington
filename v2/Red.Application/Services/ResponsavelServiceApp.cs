@@ -24,5 +24,24 @@ namespace Red.Application.Services
             GC.SuppressFinalize(this);
         }
 
+        public IList<ResponsavelViewModel> ObterTodos()
+        {
+            throw new NotImplementedException();
+        }
+
+        public ResponsavelViewModel ObterPorId(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ValidationResult Gravar(ResponsavelViewModel item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ValidationResult Excluir(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

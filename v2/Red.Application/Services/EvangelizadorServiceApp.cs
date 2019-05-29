@@ -24,5 +24,24 @@ namespace Red.Application.Services
             GC.SuppressFinalize(this);
         }
 
+        public IList<EvangelizadorViewModel> ObterTodos()
+        {
+            throw new NotImplementedException();
+        }
+
+        public EvangelizadorViewModel ObterPorId(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ValidationResult Gravar(EvangelizadorViewModel item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ValidationResult Excluir(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

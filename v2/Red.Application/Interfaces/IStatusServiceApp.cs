@@ -4,7 +4,7 @@ using French.Tools.DomainValidator;
 
 namespace Red.Application.Interfaces
 {
-    public interface IStatusServiceApp : IServiceBase
+    public interface IStatusServiceApp : IServiceBaseApp<StatusViewModel>
     { 
     }
 }
