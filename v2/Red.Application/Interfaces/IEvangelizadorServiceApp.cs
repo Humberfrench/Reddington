@@ -4,7 +4,7 @@ using French.Tools.DomainValidator;
 
 namespace Red.Application.Interfaces
 {
-    public interface IEvangelizadorServiceApp : IServiceBase
+    public interface IEvangelizadorServiceApp : IServiceBaseApp<EvangelizadorViewModel>
     {
     }
 }

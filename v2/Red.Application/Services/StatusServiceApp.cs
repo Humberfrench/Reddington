@@ -24,5 +24,24 @@ namespace Red.Application.Services
             GC.SuppressFinalize(this);
         }
 
+        public IList<StatusViewModel> ObterTodos()
+        {
+            throw new NotImplementedException();
+        }
+
+        public StatusViewModel ObterPorId(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ValidationResult Gravar(StatusViewModel item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ValidationResult Excluir(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

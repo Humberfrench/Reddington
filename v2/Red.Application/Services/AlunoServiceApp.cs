@@ -18,6 +18,33 @@ namespace Red.Application.Services
             this.alunoService = alunoService;
         }
 
+        public IList<AlunoViewModel> ObterTodos()
+        {
+            var dados = alunoService.ObterTodos();
+
+            var retorno = Mapper.Map<IList<AlunoViewModel>>(dados);
+
+            return retorno;
+        }
+        public AlunoViewModel ObterPorId(int id)
+        {
+            var dados = alunoService.ObterPorId(id);
+
+            var retorno = Mapper.Map<AlunoViewModel>(dados);
+
+            return retorno;
+        }
+
+        public ValidationResult Gravar(AlunoViewModel item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ValidationResult Excluir(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Dispose()
         {
             GC.SuppressFinalize(this);

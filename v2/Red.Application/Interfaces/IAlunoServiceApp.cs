@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Red.Application.Interfaces
 {
-    public interface IAlunoServiceApp : IServiceBase
+    public interface IAlunoServiceApp : IServiceBaseApp<AlunoViewModel>
     {
 
     }

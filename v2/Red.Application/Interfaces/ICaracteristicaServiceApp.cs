@@ -4,7 +4,7 @@ using French.Tools.DomainValidator;
 
 namespace Red.Application.Interfaces
 {
-    public interface ICaracteristicaServiceApp : IServiceBase
+    public interface ICaracteristicaServiceApp : IServiceBaseApp<CaracteristicaViewModel>
     {
 
     }
