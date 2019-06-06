@@ -1,6 +1,9 @@
-D:\Desenvolvimento\Sistemas\Red\v2\Red.Ioc\bin\Debug\Red.Ioc.dll.config
 D:\Desenvolvimento\Sistemas\Red\v2\Red.Ioc\bin\Debug\Red.Ioc.dll
 D:\Desenvolvimento\Sistemas\Red\v2\Red.Ioc\bin\Debug\Red.Ioc.pdb
+D:\Desenvolvimento\Sistemas\Red\v2\Red.Ioc\obj\Debug\Red.Ioc.csproj.CoreCompileInputs.cache
+D:\Desenvolvimento\Sistemas\Red\v2\Red.Ioc\obj\Debug\Red.Ioc.dll
+D:\Desenvolvimento\Sistemas\Red\v2\Red.Ioc\obj\Debug\Red.Ioc.pdb
+D:\Desenvolvimento\Sistemas\Red\v2\Red.Ioc\bin\Debug\Red.Ioc.dll.config
 D:\Desenvolvimento\Sistemas\Red\v2\Red.Ioc\bin\Debug\Red.Application.dll
 D:\Desenvolvimento\Sistemas\Red\v2\Red.Ioc\bin\Debug\Red.Domain.dll
 D:\Desenvolvimento\Sistemas\Red\v2\Red.Ioc\bin\Debug\Red.Repository.dll
@@ -23,7 +26,4 @@ D:\Desenvolvimento\Sistemas\Red\v2\Red.Ioc\bin\Debug\AutoMapper.pdb
 D:\Desenvolvimento\Sistemas\Red\v2\Red.Ioc\bin\Debug\AutoMapper.xml
 D:\Desenvolvimento\Sistemas\Red\v2\Red.Ioc\bin\Debug\EntityFramework.xml
 D:\Desenvolvimento\Sistemas\Red\v2\Red.Ioc\obj\Debug\Red.Ioc.csprojAssemblyReference.cache
-D:\Desenvolvimento\Sistemas\Red\v2\Red.Ioc\obj\Debug\Red.Ioc.csproj.CoreCompileInputs.cache
 D:\Desenvolvimento\Sistemas\Red\v2\Red.Ioc\obj\Debug\Red.Ioc.csproj.CopyComplete
-D:\Desenvolvimento\Sistemas\Red\v2\Red.Ioc\obj\Debug\Red.Ioc.dll
-D:\Desenvolvimento\Sistemas\Red\v2\Red.Ioc\obj\Debug\Red.Ioc.pdb

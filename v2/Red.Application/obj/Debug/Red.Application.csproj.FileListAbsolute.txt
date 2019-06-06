@@ -1,3 +1,5 @@
+D:\Desenvolvimento\Sistemas\Red\v2\Red.Application\obj\Debug\Red.Application.csprojAssemblyReference.cache
+D:\Desenvolvimento\Sistemas\Red\v2\Red.Application\obj\Debug\Red.Application.csproj.CoreCompileInputs.cache
 D:\Desenvolvimento\Sistemas\Red\v2\Red.Application\bin\Debug\Red.Application.dll.config
 D:\Desenvolvimento\Sistemas\Red\v2\Red.Application\bin\Debug\Red.Application.dll
 D:\Desenvolvimento\Sistemas\Red\v2\Red.Application\bin\Debug\Red.Application.pdb
@@ -43,8 +45,6 @@ D:\Desenvolvimento\Sistemas\Red\v2\Red.Application\bin\Debug\System.Web.Razor.xm
 D:\Desenvolvimento\Sistemas\Red\v2\Red.Application\bin\Debug\System.Net.Http.Formatting.xml
 D:\Desenvolvimento\Sistemas\Red\v2\Red.Application\bin\Debug\System.Web.WebPages.Deployment.xml
 D:\Desenvolvimento\Sistemas\Red\v2\Red.Application\bin\Debug\Antlr3.Runtime.pdb
-D:\Desenvolvimento\Sistemas\Red\v2\Red.Application\obj\Debug\Red.Application.csprojAssemblyReference.cache
-D:\Desenvolvimento\Sistemas\Red\v2\Red.Application\obj\Debug\Red.Application.csproj.CoreCompileInputs.cache
 D:\Desenvolvimento\Sistemas\Red\v2\Red.Application\obj\Debug\Red.Application.csproj.CopyComplete
 D:\Desenvolvimento\Sistemas\Red\v2\Red.Application\obj\Debug\Red.Application.dll
 D:\Desenvolvimento\Sistemas\Red\v2\Red.Application\obj\Debug\Red.Application.pdb
