@@ -19,7 +19,7 @@ namespace Red.Web.Controllers
         public ActionResult Index()
         {
             var alunos = alunoServiceApp.ObterTodos();
-            return View();
+            return View(alunos);
         }
     }
 }

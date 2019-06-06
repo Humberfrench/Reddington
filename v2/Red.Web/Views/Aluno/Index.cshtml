@@ -1,14 +1,67 @@
-﻿@model TModel
+﻿@model Red.Application.ViewModel.AlunoViewModel
 
-<!DOCTYPE html>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
-<html>
-<head>
-    <title>title</title>
-</head>
-<body>
-<div>
-      
+<h2>Alunos</h2>
+<div class="container">
+    <div class="row">
+
+    </div>
+    <div class="row">
+        <table class="table table-striped" id="TableAluno">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nome</th>
+                    <th>Resp.</th>
+                    <th>Dt.Nasc.</th>
+                    <th>Jovens</th>
+                    <th>Matr.</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Codigo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Nome)
+                        </td>
+                        <td>
+                            -@item.Responsavel.Responsavel1 <br /> -@item.Responsavel.Responsavel2
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DataNascimento)
+                        </td>
+                        <td>
+                            @Html.Raw(item.GrupoDeJovens.ToSimNaoIcone())
+                        </td>
+                        <td>
+                            @Html.Raw(item.Matriculado.ToSimNaoIcone())
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Status.Descricao)
+                        </td>
+                        <td style="text-align:right;">
+                            <button type="button" class="btn btn-success btn-sm" onclick="Edit('@item.Codigo')">
+                                <i class="glyphicon glyphicon-pencil" data-toggle="tooltip" data-placement="top" title="Editar Registro"></i>
+                            </button>
+                            <button type="button" id="Excluir" name="Excluir" class="btn btn-danger btn-sm" onclick="ExcluirConfirmar('@item.Codigo','@item.Nome')" @disabled>
+                                <i class=" glyphicon glyphicon-trash" data-toggle="tooltip" data-placement="top" title="Excluir Registro">
+                                </i>
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 </div>
-</body>
-</html>
