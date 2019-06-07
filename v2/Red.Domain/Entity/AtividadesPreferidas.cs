@@ -7,23 +7,23 @@ namespace Red.Domain.Entity
     [Table("AtividadesPreferida")]
     public partial class AtividadesPreferidas
     {
-        private IList<Aluno> aluno;
+        private IList<Aluno> alunos;
 
         public AtividadesPreferidas()
         {
-            aluno = new List<Aluno>();
+            alunos = new List<Aluno>();
         }
 
-        public int AtividadesPreferidaId { get; set; }
+        public int AtividadesPreferidasId { get; set; }
 
         [Required]
         [StringLength(50)]
         public string Descricao { get; set; }
 
-        public virtual IList<Aluno> Aluno
+        public virtual IList<Aluno> Alunos
         {
-            get => aluno;
-            set => aluno = value;
+            get => alunos;
+            set => alunos = value;
         }
     }
 }

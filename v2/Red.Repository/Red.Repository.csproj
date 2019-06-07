@@ -53,6 +53,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mapping\StatusMap.cs" />
+    <Compile Include="Mapping\ResponsavelMap.cs" />
+    <Compile Include="Mapping\ProblemasDeSaudeMap.cs" />
+    <Compile Include="Mapping\EvangelizadorMap.cs" />
+    <Compile Include="Mapping\AtividadesPreferidasMap.cs" />
+    <Compile Include="Mapping\TurmaMap.cs" />
+    <Compile Include="Mapping\CaracteristicaMap.cs" />
     <Compile Include="TurmaRepository.cs" />
     <Compile Include="StatusRepository.cs" />
     <Compile Include="ProblemasDeSaudeRepository.cs" />

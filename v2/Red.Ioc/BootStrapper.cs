@@ -56,9 +56,9 @@ namespace Red.Ioc
             container.Register<IEvangelizadorService, EvangelizadorService>(Lifestyle.Scoped);
             container.Register<IEvangelizadorRepository, EvangelizadorRepository>(Lifestyle.Scoped);
 
-            container.Register<IProblemasDeSaudeServiceApp, IProblemasDeSaudeServiceApp>(Lifestyle.Scoped);
-            container.Register<IProblemasDeSaudeService, IProblemasDeSaudeService>(Lifestyle.Scoped);
-            container.Register<IProblemasDeSaudeRepository, IProblemasDeSaudeRepository>(Lifestyle.Scoped);
+            container.Register<IProblemasDeSaudeServiceApp, ProblemasDeSaudeServiceApp>(Lifestyle.Scoped);
+            container.Register<IProblemasDeSaudeService, ProblemasDeSaudeService>(Lifestyle.Scoped);
+            container.Register<IProblemasDeSaudeRepository, ProblemasDeSaudeRepository>(Lifestyle.Scoped);
 
             container.Register<IResponsavelServiceApp, ResponsavelServiceApp>(Lifestyle.Scoped);
             container.Register<IResponsavelService, ResponsavelService>(Lifestyle.Scoped);

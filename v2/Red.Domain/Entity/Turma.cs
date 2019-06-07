@@ -9,11 +9,6 @@ namespace Red.Domain.Entity
     {
         private IList<Aluno> aluno;
 
-        public Turma()
-        {
-            aluno = new List<Aluno>();
-        }
-
         public int TurmaId { get; set; }
 
         [Required]
@@ -26,10 +21,5 @@ namespace Red.Domain.Entity
 
         public virtual Evangelizador Evangelizador { get; set; }
 
-        public virtual IList<Aluno> Aluno
-        {
-            get => aluno;
-            set => aluno = value;
-        }
     }
 }

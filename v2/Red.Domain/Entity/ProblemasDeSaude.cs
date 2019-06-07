@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Red.Domain.Entity
 {
-    [Table("ProblemasSaude")]
+    [Table("ProblemasDeSaude")]
     public class ProblemasDeSaude
     {
         private IList<Aluno> aluno;
@@ -15,7 +15,7 @@ namespace Red.Domain.Entity
         }
 
         [Key]
-        public int ProblemaDeSaudeId { get; set; }
+        public int ProblemasDeSaudeId { get; set; }
 
         [Required]
         [StringLength(50)]
