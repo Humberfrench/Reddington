@@ -7,8 +7,7 @@ namespace Red.Domain.Entity
     [Table("Turma")]
     public partial class Turma
     {
-        private IList<Aluno> aluno;
-
+        [Key]
         public int TurmaId { get; set; }
 
         [Required]

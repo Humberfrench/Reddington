@@ -5,23 +5,24 @@ namespace Red.Domain.Entity
 {
     public partial class Status
     {
-        private IList<Aluno> aluno;
+        private IList<Aluno> alunos;
 
         public Status()
         {
-            aluno = new List<Aluno>();
+            alunos = new List<Aluno>();
         }
 
+        [Key]
         public int StatusId { get; set; }
 
         [Required]
         [StringLength(50)]
         public string Descricao { get; set; }
 
-        public virtual IList<Aluno> Aluno
+        public virtual IList<Aluno> Alunos
         {
-            get => aluno;
-            set => aluno = value;
+            get => alunos;
+            set => alunos = value;
         }
     }
 }

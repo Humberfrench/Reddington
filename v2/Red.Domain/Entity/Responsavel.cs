@@ -7,13 +7,14 @@ namespace Red.Domain.Entity
     [Table("Responsavel")]
     public partial class Responsavel
     {
-        private IList<Aluno> aluno;
+        private IList<Aluno> alunos;
 
         public Responsavel()
         {
-            aluno = new List<Aluno>();
+            alunos = new List<Aluno>();
         }
 
+        [Key]
         public int ResponsavelId { get; set; }
 
         [StringLength(75)]
@@ -49,10 +50,10 @@ namespace Red.Domain.Entity
         [StringLength(15)]
         public string Celular2 { get; set; }
 
-        public virtual IList<Aluno> Aluno
+        public virtual IList<Aluno> Alunos
         {
-            get => aluno;
-            set => aluno = value;
+            get => alunos;
+            set => alunos = value;
         }
     }
 }

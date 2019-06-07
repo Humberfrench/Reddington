@@ -7,12 +7,6 @@ namespace Red.Domain.Entity
     [Table("ProblemasDeSaude")]
     public class ProblemasDeSaude
     {
-        private IList<Aluno> aluno;
-
-        public ProblemasDeSaude()
-        {
-            aluno = new List<Aluno>();
-        }
 
         [Key]
         public int ProblemasDeSaudeId { get; set; }
@@ -21,10 +15,5 @@ namespace Red.Domain.Entity
         [StringLength(50)]
         public string Descricao { get; set; }
 
-        public virtual IList<Aluno> Aluno
-        {
-            get => aluno;
-            set => aluno = value;
-        }
     }
 }

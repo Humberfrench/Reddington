@@ -7,13 +7,14 @@ namespace Red.Domain.Entity
     [Table("Evangelizador")]
     public partial class Evangelizador
     {
-        private ICollection<Turma> turma;
+        private ICollection<Turma> turmas;
 
         public Evangelizador()
         {
-            turma = new HashSet<Turma>();
+            turmas = new HashSet<Turma>();
         }
 
+        [Key]
         public int EvangelizadorId { get; set; }
 
         [Required]
@@ -28,10 +29,10 @@ namespace Red.Domain.Entity
         [StringLength(75)]
         public string Email { get; set; }
 
-        public virtual ICollection<Turma> Turma
+        public virtual ICollection<Turma> Turmas
         {
-            get => turma;
-            set => turma = value;
+            get => turmas;
+            set => turmas = value;
         }
     }
 }

@@ -8,19 +8,8 @@ namespace Red.Domain.Entity
     [Table("Aluno")]
     public partial class Aluno
     {
-        private IList<AtividadesPreferidas> atividadesPreferida;
-        private IList<Caracteristica> caracteristica;
-        private IList<ProblemasDeSaude> problemasSaude;
-        private IList<Turma> turma;
 
-        public Aluno()
-        {
-            atividadesPreferida = new List<AtividadesPreferidas>();
-            caracteristica = new List<Caracteristica>();
-            problemasSaude = new List<ProblemasDeSaude>();
-            turma = new List<Turma>();
-        }
-
+        [Key]
         public int AlunoId { get; set; }
 
         [Required]
@@ -49,28 +38,5 @@ namespace Red.Domain.Entity
 
         public virtual Status Status { get; set; }
 
-        public virtual IList<AtividadesPreferidas> AtividadesPreferida
-        {
-            get => atividadesPreferida;
-            set => atividadesPreferida = value;
-        }
-
-        public virtual IList<Caracteristica> Caracteristica
-        {
-            get => caracteristica;
-            set => caracteristica = value;
-        }
-
-        public virtual IList<ProblemasDeSaude> ProblemasSaude
-        {
-            get => problemasSaude;
-            set => problemasSaude = value;
-        }
-
-        public virtual IList<Turma> Turma
-        {
-            get => turma;
-            set => turma = value;
-        }
     }
 }

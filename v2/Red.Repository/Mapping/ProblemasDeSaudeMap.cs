@@ -14,6 +14,7 @@ namespace Red.Repository.Mapping
             this.ToTable("ProblemasDeSaude");
             this.Property(t => t.ProblemasDeSaudeId).HasColumnName("ProblemasDeSaudeId");
             this.Property(t => t.Descricao).HasColumnName("Descricao");
+
             //this.HasMany(e => e.Favorecidos).WithRequired(e => e.Banco).HasForeignKey(e => e.BancoId).WillCascadeOnDelete(false);
         }
     }

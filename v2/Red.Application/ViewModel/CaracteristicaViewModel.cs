@@ -1,24 +1,14 @@
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Red.Application.ViewModel
 {
     public partial class CaracteristicaViewModel
     {
-        private IList<AlunoViewModel> aluno;
-
-        public CaracteristicaViewModel()
-        {
-            aluno = new List<AlunoViewModel>();
-        }
-
         public int CaracteristicaId { get; set; }
 
+        [Required]
+        [StringLength(50)]
         public string Descricao { get; set; }
-
-        public virtual IList<AlunoViewModel> Aluno
-        {
-            get => aluno;
-            set => aluno = value;
-        }
     }
 }

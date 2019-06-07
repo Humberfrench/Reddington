@@ -4,13 +4,6 @@ namespace Red.Application.ViewModel
 {
     public partial class TurmaViewModel
     {
-        private IList<AlunoViewModel> aluno;
-
-        public TurmaViewModel()
-        {
-            aluno = new List<AlunoViewModel>();
-        }
-
         public int TurmaId { get; set; }
 
         public string NomeSala { get; set; }
@@ -21,10 +14,5 @@ namespace Red.Application.ViewModel
 
         public virtual EvangelizadorViewModel Evangelizador { get; set; }
 
-        public virtual IList<AlunoViewModel> Aluno
-        {
-            get => aluno;
-            set => aluno = value;
-        }
     }
 }

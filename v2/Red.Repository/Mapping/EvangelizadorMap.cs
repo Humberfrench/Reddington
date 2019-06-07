@@ -17,7 +17,7 @@ namespace Red.Repository.Mapping
             this.Property(t => t.Contato).HasColumnName("Contato");
             this.Property(t => t.Email).HasColumnName("Email");
 
-            //this.HasMany(e => e.Favorecidos).WithRequired(e => e.Banco).HasForeignKey(e => e.BancoId).WillCascadeOnDelete(false);
+            this.HasMany(e => e.Turmas).WithRequired(e => e.Evangelizador).HasForeignKey(e => e.EvangelizadorId).WillCascadeOnDelete(false);
         }
     }
 }
