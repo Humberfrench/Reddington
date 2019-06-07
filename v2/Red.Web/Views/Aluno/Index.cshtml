@@ -1,4 +1,5 @@
-﻿@model Red.Application.ViewModel.AlunoViewModel
+﻿@using Red.Application.ViewModel
+@model IList<AlunoViewModel>
 
 @{
     ViewBag.Title = "Index";
@@ -30,31 +31,31 @@
 
                     <tr>
                         <td>
-                            @Html.DisplayFor(modelItem => item.Codigo)
+                            @Html.DisplayFor(modelItem => item.AlunoId)
                         </td>
                         <td>
                             @Html.DisplayFor(modelItem => item.Nome)
                         </td>
                         <td>
-                            -@item.Responsavel.Responsavel1 <br /> -@item.Responsavel.Responsavel2
+                            @*-@item.Responsavel.Responsavel1 <br /> -@item.Responsavel.Responsavel2*@
                         </td>
                         <td>
                             @Html.DisplayFor(modelItem => item.DataNascimento)
                         </td>
                         <td>
-                            @Html.Raw(item.GrupoDeJovens.ToSimNaoIcone())
+                            @Html.Raw(item.GrupoDeJovens)
                         </td>
                         <td>
-                            @Html.Raw(item.Matriculado.ToSimNaoIcone())
+                            @Html.Raw(item.Matriculado)
                         </td>
                         <td>
                             @Html.DisplayFor(modelItem => item.Status.Descricao)
                         </td>
                         <td style="text-align:right;">
-                            <button type="button" class="btn btn-success btn-sm" onclick="Edit('@item.Codigo')">
+                            <button type="button" class="btn btn-success btn-sm" onclick="Edit('@item.AlunoId')">
                                 <i class="glyphicon glyphicon-pencil" data-toggle="tooltip" data-placement="top" title="Editar Registro"></i>
                             </button>
-                            <button type="button" id="Excluir" name="Excluir" class="btn btn-danger btn-sm" onclick="ExcluirConfirmar('@item.Codigo','@item.Nome')" @disabled>
+                            <button type="button" id="Excluir" name="Excluir" class="btn btn-danger btn-sm" onclick="ExcluirConfirmar('@item.AlunoId','@item.Nome')">
                                 <i class=" glyphicon glyphicon-trash" data-toggle="tooltip" data-placement="top" title="Excluir Registro">
                                 </i>
                             </button>

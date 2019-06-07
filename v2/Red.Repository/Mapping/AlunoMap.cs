@@ -19,7 +19,7 @@ namespace Red.Repository.Mapping
             this.Property(t => t.GrupoDeJovens).HasColumnName("GrupoDeJovens");
             this.Property(t => t.Matriculado).HasColumnName("Matriculado");
             this.Property(t => t.Observacao).HasColumnName("Observacao");
-            this.Property(t => t.Sexo).HasColumnName("Observacao");
+            this.Property(t => t.Sexo).HasColumnName("Sexo");
             this.Property(t => t.Matriculado).HasColumnName("Matriculado");
 
             //this.HasMany(e => e.Favorecidos).WithRequired(e => e.Banco).HasForeignKey(e => e.BancoId).WillCascadeOnDelete(false);
