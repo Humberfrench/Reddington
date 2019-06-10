@@ -19,6 +19,9 @@ namespace Red.Web.Controllers
         public ActionResult Index()
         {
             var alunos = alunoServiceApp.ObterTodos();
+
+            alunos = alunos.OrderBy(a => a.Nome).ToList();
+
             return View(alunos);
         }
     }

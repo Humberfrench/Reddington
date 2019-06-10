@@ -29,7 +29,7 @@ namespace Red.Domain.Entity
         [StringLength(75)]
         public string Email { get; set; }
 
-        public virtual List<Turma> Turmas
+        public virtual IList<Turma> Turmas
         {
             get => turmas;
             set => turmas = value;

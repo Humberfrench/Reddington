@@ -29,6 +29,7 @@ namespace Red.Repository.Context
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            
             modelBuilder.Configurations.Add(new AlunoMap());
             modelBuilder.Configurations.Add(new AtividadesPreferidasMap());
             modelBuilder.Configurations.Add(new CaracteristicaMap());

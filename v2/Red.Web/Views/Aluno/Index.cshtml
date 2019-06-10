@@ -1,4 +1,6 @@
 ﻿@using Red.Application.ViewModel
+@using French.Tools.Extensions
+
 @model IList<AlunoViewModel>
 
 @{
@@ -7,17 +9,17 @@
 }
 
 <h2>Alunos</h2>
-<div class="container">
+<div class="container-fluid">
     <div class="row">
 
     </div>
     <div class="row">
-        <table class="table table-striped" id="TableAluno">
-            <thead>
+        <table class="table table-striped table-hover table-sm" id="TableAluno">
+            <thead class="thead-dark">
                 <tr>
                     <th>#</th>
                     <th>Nome</th>
-                    <th>Resp.</th>
+                    <th colspan="2">Responsável</th>
                     <th>Dt.Nasc.</th>
                     <th>Jovens</th>
                     <th>Matr.</th>
@@ -37,26 +39,29 @@
                             @Html.DisplayFor(modelItem => item.Nome)
                         </td>
                         <td>
-                            -@item.Responsavel.Responsavel1 <br /> -@item.Responsavel.Responsavel2*
+                            @item.Responsavel.Responsavel1
                         </td>
                         <td>
-                            @Html.DisplayFor(modelItem => item.DataNascimento)
+                            @item.Responsavel.Responsavel2
                         </td>
                         <td>
-                            @Html.Raw(item.GrupoDeJovens)
+                            @item.DataNascimento.ToDateFormated()
                         </td>
                         <td>
-                            @Html.Raw(item.Matriculado)
+                            @Html.Raw(item.GrupoDeJovens.ToSimNao())
+                        </td>
+                        <td>
+                            @Html.Raw(item.Matriculado.ToSimNao())
                         </td>
                         <td>
                             @Html.DisplayFor(modelItem => item.Status.Descricao)
                         </td>
                         <td style="text-align:right;">
                             <button type="button" class="btn btn-success btn-sm" onclick="Edit('@item.AlunoId')">
-                                <i class="glyphicon glyphicon-pencil" data-toggle="tooltip" data-placement="top" title="Editar Registro"></i>
+                                <i class="fa fa-edit" data-toggle="tooltip" data-placement="top" title="Editar Registro"></i>
                             </button>
                             <button type="button" id="Excluir" name="Excluir" class="btn btn-danger btn-sm" onclick="ExcluirConfirmar('@item.AlunoId','@item.Nome')">
-                                <i class=" glyphicon glyphicon-trash" data-toggle="tooltip" data-placement="top" title="Excluir Registro">
+                                <i class=" fa fa-trash" data-toggle="tooltip" data-placement="top" title="Excluir Registro">
                                 </i>
                             </button>
                         </td>
