@@ -1,0 +1,90 @@
+﻿<!-- Edição Modal -->
+@Html.AntiForgeryToken()
+<div id="modalEdicao" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content animated">
+            <div class="modal-header success-element">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel">Responsáveis</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-1">&nbsp;</div>
+                    <div class="col-md-2"><label id="labelCodigo" for="Codigo">Código</label></div>
+                    <div class="col-md-8"><input type="text" id="Codigo" name="Codigo" value="" readonly="readonly" class="form-control m-b-md" /></div>
+                    <div class="col-md-1">&nbsp;</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1">&nbsp;</div>
+                    <div class="col-md-2"><label id="labelNome1" for="Responsavel1">Responsável 1</label></div>
+                    <div class="col-md-8"><input type="text" id="Responsavel1" name="Responsavel1" value="" class="form-control m-b-md" placeholder="Responsável" maxlength="50" /></div>
+                    <div class="col-md-1">&nbsp;</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1">&nbsp;</div>
+                    <div class="col-md-2"><label id="labelNome2" for="Responsavel2">Responsável 2</label></div>
+                    <div class="col-md-8"><input type="text" id="Responsavel2" name="Responsavel2" value="" class="form-control m-b-md" placeholder="Responsável" maxlength="50" /></div>
+                    <div class="col-md-1">&nbsp;</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1">&nbsp;</div>
+                    <div class="col-md-2"><label id="labelDocumento" for="Documento">Doc.</label></div>
+                    <div class="col-md-3"><input type="text" id="Documento" name="Documento" value="" class="form-control m-b-md" placeholder="Documento" maxlength="50" /></div>
+                    <div class="col-md-2"><label id="labelTelefone" for="Telefone">Fone</label></div>
+                    <div class="col-md-3">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-phone-alt"></i></span>
+                            <input type="text" id="Telefone" name="Telefone" value="" class="form-control m-b-md" placeholder="0000-0000" maxlength="15" />
+                        </div>
+                    </div>
+                    <div class="col-md-1">&nbsp;</div>
+                </div>
+                <div class="row">&nbsp;</div>
+                <div class="row">
+                    <div class="col-md-1">&nbsp;</div>
+                    <div class="col-md-2"><label id="labelCelular1" for="Celular1">Celular 1</label></div>
+                    <div class="col-md-3">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-earphone"></i></span>
+                            <input type="text" id="Celular1" name="Celular1" value="" class="form-control m-b-md" placeholder="90000-0000" maxlength="15" />
+                        </div>
+                    </div>
+                    <div class="col-md-2"><label id="labelCelular2" for="Celular2">Celular 2</label></div>
+                    <div class="col-md-3">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon3"><i class="glyphicon glyphicon-earphone"></i></span>
+                            <input type="text" id="Celular2" name="Celular2" value="" class="form-control m-b-md" placeholder="90000-0000" maxlength="15" />
+                        </div>
+                    </div>
+                    <div class="col-md-1">&nbsp;</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1">&nbsp;</div>
+                    <div class="col-md-2"><label id="labelEndereco" for="Endereco">Endereço</label></div>
+                    <div class="col-md-5"><input type="text" id="Endereco" name="Endereco" value="" class="form-control m-b-md" placeholder="Endereço" maxlength="75" /></div>
+                    <div class="col-md-1"><label id="labelCep" for="Cep">Cep</label></div>
+                    <div class="col-md-2"><input type="text" id="Cep" name="Cep" value="" class="form-control m-b-md" placeholder="Cep" /></div>
+                    <div class="col-md-1">&nbsp;</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1">&nbsp;</div>
+                    <div class="col-md-2"><label id="labelBairro" for="Bairro">Bairro</label></div>
+                    <div class="col-md-2"><input type="text" id="Bairro" name="Bairro" value="" class="form-control m-b-md" placeholder="Bairro" maxlength="30" /></div>
+                    <div class="col-md-2"><label id="labelCidade" for="Celular2">Cidade</label></div>
+                    <div class="col-md-2"><input type="text" id="Cidade" name="Cidade" value="" class="form-control m-b-md" placeholder="Cidade" maxlength="50" /></div>
+                    <div class="col-md-1"><label id="labelUF" for="UF">UF</label></div>
+                    <div class="col-md-1"><input type="text" id="UF" name="UF" value="" class="form-control m-b-md" placeholder="UF" maxlength="2" /></div>
+                    <div class="col-md-1">&nbsp;</div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                    <i class="glyphicon glyphicon-remove"></i>Fechar
+                </button>
+                <button type="button" class="btn btn-primary" id="Gravar">
+                    <i class="glyphicon glyphicon-floppy-disk"></i>Gravar
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

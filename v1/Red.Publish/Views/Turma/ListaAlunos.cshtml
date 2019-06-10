@@ -1,0 +1,53 @@
+﻿@using Red.Application.ViewModel.DTO
+@using Red.Extensions
+@model IEnumerable<DTOEvangelizadorAluno>
+@{
+    Layout = null;
+    var codigoTurma = "0";
+    var nomeTurma = "";
+    if (Model.ToList().Count > 0)
+    {
+        codigoTurma = @Model.ToList()[0].TurmaCodigo.ToString();
+        nomeTurma = @Model.ToList()[0].Turma;
+    }
+}                                                               
+<input type="hidden" id="CodigoTurma" name="CodigoTurma" value="@codigoTurma" />
+<script type="text/javascript">
+    $("#Descricao").val('@nomeTurma');
+</script>
+<table class="table table-striped" id="TableAluno">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Status</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Codigo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Aluno)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Idade)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td style="text-align:right;">
+                    <button type="button" id="Excluir" name="Excluir" class="btn btn-danger btn-sm" onclick="return Turma.RemoverAluno('@item.TurmaCodigo','@item.Codigo')">
+                        <i class=" glyphicon glyphicon-trash" data-toggle="tooltip" data-placement="top" title="Excluir Registro">
+                        </i>
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

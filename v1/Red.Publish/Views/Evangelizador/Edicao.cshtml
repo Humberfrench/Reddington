@@ -1,0 +1,61 @@
+﻿<!-- Edição Modal -->
+@Html.AntiForgeryToken()
+@{
+    IEnumerable<SelectListItem> statusLista = ViewBag.Status as IEnumerable<SelectListItem>;
+    IEnumerable<SelectListItem> responsavelLista = ViewBag.Responsavel as IEnumerable<SelectListItem>;
+}
+<div id="modalEdicao" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content animated">
+            <div class="modal-header success-element">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel">Evangelizador</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-1">&nbsp;</div>
+                    <div class="col-md-3"><label id="labelCodigo" for="Codigo">Código</label></div>
+                    <div class="col-md-7"><input type="text" id="Codigo" name="Codigo" value="" readonly="readonly" class="form-control m-b-md" /></div>
+                    <div class="col-md-1">&nbsp;</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1">&nbsp;</div>
+                    <div class="col-md-3"><label id="labelNome" for="Nome">Nome</label></div>
+                    <div class="col-md-7"><input type="text" id="Nome" name="Nome" value="" class="form-control m-b-md" placeholder="Nome do Evangelizador" /></div>
+                    <div class="col-md-1">&nbsp;</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1">&nbsp;</div>
+                    <div class="col-md-3"><label id="labelContato" for="Contato">Contato</label></div>
+                    <div class="col-md-7">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-earphone"></i></span>
+                            <input type="text" id="Contato" name="Contato" value="" class="form-control m-b-md" placeholder="Contato do Evangelizador" />
+                        </div>
+                    </div>
+                    <div class="col-md-1">&nbsp;</div>
+                </div>
+                <div class="row">&nbsp;</div>
+                <div class="row">
+                    <div class="col-md-1">&nbsp;</div>
+                    <div class="col-md-3"><label id="labelEMail" for="EMail">E-Mail</label></div>
+                    <div class="col-md-7">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input type="text" id="EMail" name="EMail" value="" class="form-control m-b-md" placeholder="E-Mail do Evangelizador" />
+                        </div>
+                    </div>
+                    <div class="col-md-1">&nbsp;</div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                    <i class="glyphicon glyphicon-remove"></i>Fechar
+                </button>
+                <button type="button" class="btn btn-primary" id="Gravar">
+                    <i class="glyphicon glyphicon-floppy-disk"></i>Gravar
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

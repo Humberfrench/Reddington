@@ -1,0 +1,109 @@
+﻿@using Red.Web.Controllers
+@using Red.Web.Helpers    
+
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element">
+                    <span>
+                        <img alt="image" class="img-circle" src="~/Images/icon-person.png" />
+                    </span>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="clear">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">@ViewBag.Usuario</strong>
+                            </span> <span class="text-muted text-xs block">@ViewBag.Perfil<b class="caret"></b></span>
+                        </span>
+                    </a>
+                </div>
+                <div class="logo-element">
+                    Red+
+                </div>
+            </li>
+            <!-- Home -->
+            <li class="@Html.IsSelected(controller: "Home")">
+                <a href="@Url.Action("Index", "Home")">
+                    <i class="fa fa-desktop"></i>
+                    <span class="nav-label" data-i18n="nav.dashboard">Home</span>
+                    <span class="fa arrow"></span>
+                </a>
+            </li>
+            <!-- Aluno -->
+            <li class="@Html.IsSelected(controller: "Home")">
+                <a href="@Url.Action("Index", "Home")">
+                    <i class="fa fa-desktop"></i>
+                    <span class="nav-label" data-i18n="nav.dashboard">Alunos</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "Aluno", cssClass: "in")">
+                    <li class="@Html.IsSelected(action: "Index")">
+                        <a href="@Url.Action("Index", "Aluno")">Aluno</a>
+                        <a href="@Url.Action("Ativos", "Aluno")">Ativos</a>
+                        <a href="@Url.Action("NaoAtivos", "Aluno")">Não Ativos</a>
+                    </li>
+                </ul>
+                <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "Responsavel", cssClass: "in")">
+                    <li class="@Html.IsSelected(action: "Index")">
+                        <a href="@Url.Action("Index", "Responsavel")">Responsável</a>
+                    </li>
+                </ul>
+            </li>
+            <!-- Evangelizador -->
+            <li class="@Html.IsSelected(controller: "Home")">
+                <a href="@Url.Action("Index", "Home")">
+                    <i class="fa fa-desktop"></i>
+                    <span class="nav-label" data-i18n="nav.dashboard">Evangelizador</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "Evangelizador", cssClass: "in")">
+                    <li class="@Html.IsSelected(action: "Index")">
+                        <a href="@Url.Action("Index", "Evangelizador")">Evangelizador</a>
+                    </li>
+                </ul>
+            </li>
+            <!-- Evangelizador -->
+            <li class="@Html.IsSelected(controller: "Home")">
+                <a href="@Url.Action("Index", "Home")">
+                    <i class="fa fa-desktop"></i>
+                    <span class="nav-label" data-i18n="nav.dashboard">Turmas</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "Turma", cssClass: "in")">
+                    <li class="@Html.IsSelected(action: "Index")">
+                        <a href="@Url.Action("Index", "Turma")">Turmas</a>
+                    </li>
+                </ul>
+                <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "Turma", cssClass: "in")">
+                    <li class="@Html.IsSelected(action: "CopiarTurma")">
+                        <a href="@Url.Action("CopiarTurma", "Turma")">Copiar Turma</a>
+                    </li>
+                </ul>
+            </li>
+            <!-- Dados -->
+            <li class="@Html.IsSelected(controller: "Home")">
+                <a href="@Url.Action("Index", "Home")">
+                    <i class="fa fa-desktop"></i>
+                    <span class="nav-label" data-i18n="nav.dashboard">Dados</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "Caracteristica", cssClass: "in")">
+                    <li class="@Html.IsSelected(action: "Index")">
+                        <a href="@Url.Action("Index", "AtividadePreferida")">Atividade Preferida</a>
+                    </li>
+                </ul>
+                <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "Caracteristica", cssClass: "in")">
+                    <li class="@Html.IsSelected(action: "Index")">
+                        <a href="@Url.Action("Index", "Caracteristica")">Característica</a>
+                    </li>
+                </ul>
+                <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "ProblemaSaude", cssClass: "in")">
+                    <li class="@Html.IsSelected(action: "Index")">
+                        <a href="@Url.Action("Index", "ProblemaSaude")">Problemas de Saude</a>
+                    </li>
+                </ul>
+            </li>  
+
+        </ul>
+    </div>
+</nav>

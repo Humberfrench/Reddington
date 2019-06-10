@@ -1,0 +1,63 @@
+﻿@using Red.Application.ViewModel
+@using Red.Extensions
+@model IEnumerable<ResponsavelViewModel>
+@Styles.Render("~/css/blank")
+
+@{
+    ViewBag.Title = "Matricula Alunos";
+    Layout = null;
+    var traco = "__________________________________________________________";
+}
+
+@foreach (var item in Model)
+{
+    var nome1 = @item.Responsavel1 == "Em Branco" ? traco : item.Responsavel1;
+    var nome2 = @item.Responsavel2 == "Em Branco" ? traco : item.Responsavel2;
+
+    <div class="row">
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-10 col-md-10">
+            <h2 class="text-center">Autorização</h2>
+        </div>
+        <div class="col-lg-1 col-md-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-10 col-md-10">
+            <h4>
+                Eu, @nome1 ou @nome2, documento, @item.Documento 
+                autorizo as crianças/adolescentes menores:
+            </h4>
+        </div>
+        <div class="col-lg-1 col-md-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-10 col-md-10">
+            <h4>
+            <ul>
+                @foreach (var aluno in item.Alunos)
+                {
+                <li>@aluno.Nome - @aluno.DataNascimento.ToDateFormated()</li>
+                }
+            </ul>
+            </h4>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-lg-1 col-md-1"></div>
+            <div class="col-lg-10 col-md-10">
+                <h4>
+                    Informo nesta declaração que estamos cientes da participação deles nos eventos
+                    programados para as crianças, que adentram a Casa, Centro Espírita Caminho do Amor,
+                    às 09:00, com atividades que visam o ensinamento de Moral Cristã,
+                    encerrando o periodo de atividades por volta das 12:30 após as crianças terem almoçado.
+                </h4>
+            </div>
+            <div class="col-lg-1 col-md-1"></div>
+        </div>
+        <div class="col-lg-1 col-md-1"></div>
+    </div>
+    <div class="page-break">&nbsp;</div>
+}
+

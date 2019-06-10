@@ -1,0 +1,70 @@
+﻿@using Red.Application.ViewModel.DTO
+@using Red.Extensions
+@Styles.Render("~/Content/plugins/dataTables/dataTablesStyles")
+@Styles.Render("~/plugins/dataPickerStyles")
+@Styles.Render("~/plugins/jasnyBootstrapStyles")
+@Styles.Render("~/plugins/awesomeCheckboxStyles")
+@{
+    ViewBag.Title = "Alunos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var disabled = "";
+    IEnumerable<SelectListItem> anoLista = ViewBag.Ano as IEnumerable<SelectListItem>;
+
+}
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Lista de Alunos por Evangelizador</h5>
+                    <div class="ibox-tools">
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-md-1">&nbsp;</div>
+                        <div class="col-md-2"><label id="labelNome">Nome do Evangelizador:</label></div>
+                        <div class="col-md-8">
+                            <input type="hidden" id="Evangelizador" name="Evangelizador" value="@ViewBag.EvangelizadorId" class="form-control" readonly="readonly" />
+                            <input type="text" id="Nome" name="Nome" value="@ViewBag.Evangelizador" class="form-control m-b-md" readonly="readonly" />
+
+                        </div>
+                        <div class="col-md-1">&nbsp;</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">&nbsp;</div>
+                        <div class="col-md-2"><label id="labelDescricao" for="Descricao">Nome da Turma:</label></div>
+                        <div class="col-md-8"><input type="text" id="Descricao" name="Descricao" value="" class="form-control m-b-md" readonly="readonly" /></div>
+                        <div class="col-md-1">&nbsp;</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">&nbsp;</div>
+                        <div class="col-md-2"><label id="labeAno" for="Ano">Ano:</label></div>
+                        <div class="col-md-7">
+                            @Html.DropDownList("Ano", anoLista, new { @id = "Ano", @class = "form-control m-b" })
+                        </div>
+                        <div class="row col-md-1">
+                            <a href="#" id="Pesquisar" class="btn btn-primary btn-md" data-toggle="tooltip" data-placement="top" title="Pesquisar"><i class="glyphicon glyphicon-search"></i></a>
+                        </div>
+                        <div class="col-md-1">&nbsp;</div>
+                    </div>
+                </div>
+
+                <div class="ibox-content">
+                    <div class="row col-lg-12 col-md-12">&nbsp;</div>
+                    <div id="divTurmas"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+{
+    @Scripts.Render("~/plugins/dataPicker")
+    @Scripts.Render("~/plugins/dataTables")
+    @Scripts.Render("~/plugins/Moment")
+    @Scripts.Render("~/plugins/jasnyBootstrap")
+    @Scripts.Render("~/script/Turma/Evangelizador")
+}
