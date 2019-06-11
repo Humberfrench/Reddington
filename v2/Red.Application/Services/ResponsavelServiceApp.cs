@@ -26,12 +26,19 @@ namespace Red.Application.Services
 
         public IList<ResponsavelViewModel> ObterTodos()
         {
-            throw new NotImplementedException();
-        }
+            var dados = responsavelService.ObterTodos();
 
+            var retorno = Mapper.Map<IList<ResponsavelViewModel>>(dados);
+
+            return retorno;
+        }
         public ResponsavelViewModel ObterPorId(int id)
         {
-            throw new NotImplementedException();
+            var dados = responsavelService.ObterPorId(id);
+
+            var retorno = Mapper.Map<ResponsavelViewModel>(dados);
+
+            return retorno;
         }
 
         public ValidationResult Gravar(ResponsavelViewModel item)

@@ -1,0 +1,65 @@
+﻿@using Red.Application.ViewModel
+@using French.Tools.Extensions
+
+@model IList<ResponsavelViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Responsável</h2>
+<div class="container-fluid">
+    <div class="row">
+
+    </div>
+    <div class="row">
+        <table class="table table-striped table-hover table-sm" id="TableAluno">
+            <thead class="thead-dark">
+                <tr>
+                    <th>#</th>
+                    <th colspan="2">Responsável</th>
+                    <th>Documento</th>
+                    <th>Telefone</th>
+                    <th colspan="2">Celular</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ResponsavelId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Responsavel1)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Responsavel2)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Telefone)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Celular1)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Celular2)
+                        </td>
+                        <td style="text-align:right;">
+                            <button type="button" class="btn btn-success btn-sm" onclick="Edit('@item.ResponsavelId')">
+                                <i class="fa fa-edit" data-toggle="tooltip" data-placement="top" title="Editar Registro"></i>
+                            </button>
+                            <button type="button" id="Excluir" name="Excluir" class="btn btn-danger btn-sm" onclick="ExcluirConfirmar('@item.ResponsavelId','@item.Responsavel1')">
+                                <i class=" fa fa-trash" data-toggle="tooltip" data-placement="top" title="Excluir Registro">
+                                </i>
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
