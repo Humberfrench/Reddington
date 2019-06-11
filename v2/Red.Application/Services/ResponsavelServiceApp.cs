@@ -43,12 +43,35 @@ namespace Red.Application.Services
 
         public ValidationResult Gravar(ResponsavelViewModel item)
         {
-            throw new NotImplementedException();
+            var entity = Mapper.Map<Responsavel>(item);
+
+            var retorno = responsavelService.Gravar(entity);
+
+            if (retorno.IsValid)
+            {
+                Commit();
+                if (!ValidationResult.IsValid)
+                {
+                    return ValidationResult;
+                }
+            }
+            return retorno;
+
         }
 
         public ValidationResult Excluir(int id)
         {
-            throw new NotImplementedException();
+            var retorno = responsavelService.Excluir(id);
+            if (retorno.IsValid)
+            {
+                Commit();
+                if (!ValidationResult.IsValid)
+                {
+                    return ValidationResult;
+                }
+            }
+            return retorno;
+
         }
     }
 }
