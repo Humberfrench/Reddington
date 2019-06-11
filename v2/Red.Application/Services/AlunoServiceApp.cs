@@ -42,7 +42,8 @@ namespace Red.Application.Services
 
         public ValidationResult Excluir(int id)
         {
-            throw new NotImplementedException();
+            var exclusaoRetorno = alunoService.Equals(id);
+
         }
 
         public void Dispose()
