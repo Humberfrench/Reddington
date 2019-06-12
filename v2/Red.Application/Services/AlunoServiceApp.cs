@@ -37,12 +37,35 @@ namespace Red.Application.Services
 
         public ValidationResult Gravar(AlunoViewModel item)
         {
-            throw new NotImplementedException();
+            var entity = Mapper.Map<Aluno>(item);
+
+            var retorno = alunoService.Gravar(entity);
+
+            if(retorno.IsValid)
+            {
+                Commit();
+                if(!ValidationResult.IsValid)
+                {
+                    return ValidationResult;
+                }
+            }
+            return retorno;
+
         }
 
         public ValidationResult Excluir(int id)
         {
-            throw new NotImplementedException();
+            var retorno = alunoService.Excluir(id);
+            if (retorno.IsValid)
+            {
+                Commit();
+                if (!ValidationResult.IsValid)
+                {
+                    return ValidationResult;
+                }
+            }
+            return retorno;
+
         }
 
         public void Dispose()

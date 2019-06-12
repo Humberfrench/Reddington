@@ -26,22 +26,52 @@ namespace Red.Application.Services
 
         public IList<ResponsavelViewModel> ObterTodos()
         {
-            throw new NotImplementedException();
-        }
+            var dados = responsavelService.ObterTodos();
 
+            var retorno = Mapper.Map<IList<ResponsavelViewModel>>(dados);
+
+            return retorno;
+        }
         public ResponsavelViewModel ObterPorId(int id)
         {
-            throw new NotImplementedException();
+            var dados = responsavelService.ObterPorId(id);
+
+            var retorno = Mapper.Map<ResponsavelViewModel>(dados);
+
+            return retorno;
         }
 
         public ValidationResult Gravar(ResponsavelViewModel item)
         {
-            throw new NotImplementedException();
+            var entity = Mapper.Map<Responsavel>(item);
+
+            var retorno = responsavelService.Gravar(entity);
+
+            if (retorno.IsValid)
+            {
+                Commit();
+                if (!ValidationResult.IsValid)
+                {
+                    return ValidationResult;
+                }
+            }
+            return retorno;
+
         }
 
         public ValidationResult Excluir(int id)
         {
-            throw new NotImplementedException();
+            var retorno = responsavelService.Excluir(id);
+            if (retorno.IsValid)
+            {
+                Commit();
+                if (!ValidationResult.IsValid)
+                {
+                    return ValidationResult;
+                }
+            }
+            return retorno;
+
         }
     }
 }
