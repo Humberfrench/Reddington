@@ -143,7 +143,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\SimpleInjectorInitializer.cs" />
     <Compile Include="Controllers\AlunoController.cs" />
+    <Compile Include="Controllers\EvangelizadorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ResponsavelController.cs" />
     <Compile Include="ElmahExceptionFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -242,6 +244,8 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Evangelizador\" />
+    <Folder Include="Views\Responsavel\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
