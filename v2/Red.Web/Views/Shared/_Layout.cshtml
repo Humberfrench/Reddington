@@ -31,12 +31,12 @@
 
                     }
                     <li class="nav-item active @active ">
-                        <a class="nav-link" href="@Url.Action("Index", "Home")"><h5>Home</h5><span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="@Url.Action("Index", "Home")"><h5>Home</h5></a>
                     </li>
                     @{
 
                         active = "";
-                        if (LocationHelper.IsCurrentController("aluno",ViewContext))
+                        if (LocationHelper.IsCurrentController("aluno", ViewContext))
                         {
                             active = "active";
                         }
@@ -44,12 +44,36 @@
                     <li class="nav-item @active">
                         <a class="nav-link" href="@Url.Action("Index","Aluno")"><h5>Alunos</h5></a>
                     </li>
+                    @{
+
+                        active = "";
+                        if (LocationHelper.IsCurrentController("Responsavel", ViewContext))
+                        {
+                            active = "active";
+                        }
+                    }
                     <li class="nav-item">
                         <a class="nav-link" href="@Url.Action("Index","Responsavel")"><h5>Responsável</h5></a>
                     </li>
+                    @{
+
+                        active = "";
+                        if (LocationHelper.IsCurrentController("Evangelizador", ViewContext))
+                        {
+                            active = "active";
+                        }
+                    }
                     <li class="nav-item">
                         <a class="nav-link" href="@Url.Action("Index","Evangelizador")"><h5>Evangelizadores</h5></a>
                     </li>
+                    @{
+
+                        active = "";
+                        if (LocationHelper.IsCurrentController("Turma", ViewContext))
+                        {
+                            active = "active";
+                        }
+                    }
                     <li class="nav-item">
                         <a class="nav-link" href="@Url.Action("Index","Turma")"><h5>Turmas</h5></a>
                     </li>
