@@ -13,18 +13,18 @@ namespace Red.Services
 {
     public class CaracteristicaService : ServiceBase<Caracteristica>, ICaracteristicaService
     {
-        private readonly IAlunoRepository repAluno;
+        private readonly ICaracteristicaRepository repCaracteristica;
         private readonly ValidationResult validationResult;
 
-        public AlunoService(IAlunoRepository repAluno) : base(repAluno)
+        public CaracteristicaService(ICaracteristicaRepository repCaracteristica) : base(repCaracteristica)
         {
-            this.repAluno = repAluno;
+            this.repCaracteristica = repCaracteristica;
             validationResult = new ValidationResult();
         }
 
         public ValidationResult Excluir(int id)
         {
-            var entity = repAluno.ObterPorId(id);
+            var entity = repCaracteristica.ObterPorId(id);
 
             if (entity == null)
             {
@@ -32,35 +32,28 @@ namespace Red.Services
                 return validationResult;
             }
 
-            repAluno.Excluir(entity);
+            repCaracteristica.Excluir(entity);
 
             return validationResult;
 
         }
 
-        public ValidationResult Gravar(Aluno entity)
+        public ValidationResult Gravar(Caracteristica entity)
         {
-            if (entity.Nome.IsNullOrEmptyOrWhiteSpace())
+            if (entity.Descricao.IsNullOrEmptyOrWhiteSpace())
             {
                 validationResult.Add("Preencher campo Nome.");
                 return validationResult;
             }
 
-            if (entity.ResponsavelId == 0)
-            {
-                validationResult.Add("Preencher campo Responsável 2 .");
-                return validationResult;
-            }
-
-
-            var novo = entity.ResponsavelId == 0;
+            var novo = entity.CaracteristicaId == 0;
             if (novo)
             {
-                repAluno.Adicionar(entity);
+                repCaracteristica.Adicionar(entity);
             }
             else
             {
-                repAluno.Atualizar(entity);
+                repCaracteristica.Atualizar(entity);
             }
 
             return validationResult;

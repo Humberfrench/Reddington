@@ -13,18 +13,18 @@ namespace Red.Services
 {
     public class EvangelizadorService : ServiceBase<Evangelizador>, IEvangelizadorService
     {
-        private readonly IAlunoRepository repAluno;
+        private readonly IEvangelizadorRepository repEvangelizador;
         private readonly ValidationResult validationResult;
 
-        public AlunoService(IAlunoRepository repAluno) : base(repAluno)
+        public EvangelizadorService(IEvangelizadorRepository repEvangelizador) : base(repEvangelizador)
         {
-            this.repAluno = repAluno;
+            this.repEvangelizador = repEvangelizador;
             validationResult = new ValidationResult();
         }
 
         public ValidationResult Excluir(int id)
         {
-            var entity = repAluno.ObterPorId(id);
+            var entity = repEvangelizador.ObterPorId(id);
 
             if (entity == null)
             {
@@ -32,13 +32,13 @@ namespace Red.Services
                 return validationResult;
             }
 
-            repAluno.Excluir(entity);
+            repEvangelizador.Excluir(entity);
 
             return validationResult;
 
         }
 
-        public ValidationResult Gravar(Aluno entity)
+        public ValidationResult Gravar(Evangelizador entity)
         {
             if (entity.Nome.IsNullOrEmptyOrWhiteSpace())
             {
@@ -46,21 +46,14 @@ namespace Red.Services
                 return validationResult;
             }
 
-            if (entity.ResponsavelId == 0)
-            {
-                validationResult.Add("Preencher campo Responsável 2 .");
-                return validationResult;
-            }
-
-
-            var novo = entity.ResponsavelId == 0;
+            var novo = entity.EvangelizadorId == 0;
             if (novo)
             {
-                repAluno.Adicionar(entity);
+                repEvangelizador.Adicionar(entity);
             }
             else
             {
-                repAluno.Atualizar(entity);
+                repEvangelizador.Atualizar(entity);
             }
 
             return validationResult;

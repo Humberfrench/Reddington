@@ -53,7 +53,7 @@ namespace Red.Services
             }
 
 
-            var novo = entity.Alu == 0;
+            var novo = entity.AlunoId == 0;
             if (novo)
             {
                 repAluno.Adicionar(entity);

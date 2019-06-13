@@ -13,18 +13,18 @@ namespace Red.Services
 {
     public class StatusService : ServiceBase<Status>, IStatusService
     {
-        private readonly IAlunoRepository repAluno;
+        private readonly IStatusRepository repStatus;
         private readonly ValidationResult validationResult;
 
-        public AlunoService(IAlunoRepository repAluno) : base(repAluno)
+        public StatusService(IStatusRepository repStatus) : base(repStatus)
         {
-            this.repAluno = repAluno;
+            this.repStatus = repStatus;
             validationResult = new ValidationResult();
         }
 
         public ValidationResult Excluir(int id)
         {
-            var entity = repAluno.ObterPorId(id);
+            var entity = repStatus.ObterPorId(id);
 
             if (entity == null)
             {
@@ -32,35 +32,29 @@ namespace Red.Services
                 return validationResult;
             }
 
-            repAluno.Excluir(entity);
+            repStatus.Excluir(entity);
 
             return validationResult;
 
         }
 
-        public ValidationResult Gravar(Aluno entity)
+        public ValidationResult Gravar(Status entity)
         {
-            if (entity.Nome.IsNullOrEmptyOrWhiteSpace())
+            if (entity.Descricao.IsNullOrEmptyOrWhiteSpace())
             {
                 validationResult.Add("Preencher campo Nome.");
                 return validationResult;
             }
 
-            if (entity.ResponsavelId == 0)
-            {
-                validationResult.Add("Preencher campo Responsável 2 .");
-                return validationResult;
-            }
 
-
-            var novo = entity.ResponsavelId == 0;
+            var novo = entity.StatusId == 0;
             if (novo)
             {
-                repAluno.Adicionar(entity);
+                repStatus.Adicionar(entity);
             }
             else
             {
-                repAluno.Atualizar(entity);
+                repStatus.Atualizar(entity);
             }
 
             return validationResult;

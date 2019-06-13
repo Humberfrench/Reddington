@@ -13,18 +13,18 @@ namespace Red.Services
 {
     public class TurmaService : ServiceBase<Turma>, ITurmaService
     {
-        private readonly IAlunoRepository repAluno;
+        private readonly ITurmaRepository repTurma;
         private readonly ValidationResult validationResult;
 
-        public AlunoService(IAlunoRepository repAluno) : base(repAluno)
+        public TurmaService(ITurmaRepository repTurma) : base(repTurma)
         {
-            this.repAluno = repAluno;
+            this.repTurma = repTurma;
             validationResult = new ValidationResult();
         }
 
         public ValidationResult Excluir(int id)
         {
-            var entity = repAluno.ObterPorId(id);
+            var entity = repTurma.ObterPorId(id);
 
             if (entity == null)
             {
@@ -32,35 +32,23 @@ namespace Red.Services
                 return validationResult;
             }
 
-            repAluno.Excluir(entity);
+            repTurma.Excluir(entity);
 
             return validationResult;
 
         }
 
-        public ValidationResult Gravar(Aluno entity)
+        public ValidationResult Gravar(Turma entity)
         {
-            if (entity.Nome.IsNullOrEmptyOrWhiteSpace())
-            {
-                validationResult.Add("Preencher campo Nome.");
-                return validationResult;
-            }
 
-            if (entity.ResponsavelId == 0)
-            {
-                validationResult.Add("Preencher campo Responsável 2 .");
-                return validationResult;
-            }
-
-
-            var novo = entity.ResponsavelId == 0;
+            var novo = entity.TurmaId == 0;
             if (novo)
             {
-                repAluno.Adicionar(entity);
+                repTurma.Adicionar(entity);
             }
             else
             {
-                repAluno.Atualizar(entity);
+                repTurma.Atualizar(entity);
             }
 
             return validationResult;
