@@ -1,56 +1,79 @@
-﻿<!DOCTYPE html>
+﻿@using Red.Web.Helpers
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @{
+        var active = "";
+    }
 </head>
 <body>
-        <div class="container-fluid">
-            <nav class="navbar navbar-fixed-top navbar-expand-xl navbar-expand-sm navbar-expand-lg navbar-expand-md navbar-expand navbar-dark text-white bg-primary link">
-                <a class="navbar-brand" href="#">Reddington 2.0</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <div class="container-fluid">
+        <nav class="navbar navbar-fixed-top navbar-expand-xl navbar-expand-sm navbar-expand-lg navbar-expand-md navbar-expand navbar-dark text-white bg-primary link">
+            <a class="navbar-brand text-lg-left" href="#"><h4>Reddington 2.0</h4></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Alunos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Responsável</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Evangelizadores</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Turmas</a>
-                        </li>
-                        <li class="nav-item dropdown">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    @{
+
+                        active = "";
+                        if (LocationHelper.IsCurrentController("home", ViewContext))
+                        {
+                            active = "active";
+                        }
+
+                    }
+                    <li class="nav-item active @active ">
+                        <a class="nav-link" href="@Url.Action("Index", "Home")"><h5>Home</h5><span class="sr-only">(current)</span></a>
+                    </li>
+                    @{
+
+                        active = "";
+                        if (LocationHelper.IsCurrentController("aluno",ViewContext))
+                        {
+                            active = "active";
+                        }
+                    }
+                    <li class="nav-item @active">
+                        <a class="nav-link" href="@Url.Action("Index","Aluno")"><h5>Alunos</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Index","Responsavel")"><h5>Responsável</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Index","Evangelizador")"><h5>Evangelizadores</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Index","Turma")"><h5>Turmas</h5></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <h5>
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Dados Crianças
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Características</a>
-                                <a class="dropdown-item" href="#">Atividades Preferidas</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Problemas de Saúde</a>
-                            </div>
-                        </li>
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                </div>
-            </nav>
-        </div>
+                        </h5>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#"><h5>Características</h5></a>
+                            <a class="dropdown-item" href="#"><h5>Atividades Preferidas</h5></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><h5>Problemas de Saúde</h5></a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
     <div class="container-fluid body-content">
         @RenderBody()
         <hr />
