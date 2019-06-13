@@ -241,6 +241,8 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Aluno\Index.cshtml" />
     <Content Include="Views\Responsavel\Index.cshtml" />
+    <Content Include="Views\Aluno\Aluno.cshtml" />
+    <Content Include="Views\Aluno\View.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

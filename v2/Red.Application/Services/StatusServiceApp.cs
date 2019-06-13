@@ -26,12 +26,20 @@ namespace Red.Application.Services
 
         public IList<StatusViewModel> ObterTodos()
         {
-            throw new NotImplementedException();
+            var dados = statusService.ObterTodos();
+
+            var retorno = Mapper.Map<IList<StatusViewModel>>(dados);
+
+            return retorno;
         }
 
         public StatusViewModel ObterPorId(int id)
         {
-            throw new NotImplementedException();
+            var dados = statusService.ObterPorId(id);
+
+            var retorno = Mapper.Map<StatusViewModel>(dados);
+
+            return retorno;
         }
 
         public ValidationResult Gravar(StatusViewModel item)

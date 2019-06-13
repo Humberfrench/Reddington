@@ -1,0 +1,85 @@
+﻿@using Red.Application.ViewModel
+@using French.Tools.Extensions
+
+@model AlunoViewModel
+
+@{
+    ViewBag.Title = "Aluno";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var sexoM = Model.Sexo == "M" ? "selected" : "";
+    var sexoF = Model.Sexo == "F" ? "selected" : "";
+    IEnumerable<StatusViewModel> statusLista = ViewBag.Status as IEnumerable<StatusViewModel>;
+    IEnumerable<ResponsavelViewModel> responsavelLista = ViewBag.Responsavel as IEnumerable<ResponsavelViewModel>;
+}
+
+<h2>Alunos</h2>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-1 col-md-1 col-sm-1 col-xl-1 col-lg-1">&nbsp;</div>
+        <div class="col-6 col-md-6 col-sm-6 col-xl-6 col-lg-6">
+            <label for="Nome" class="col-form-label font-weight-bold">Nome</label>
+            <input type="text" class="form-control" id="Nome" value="@Model.Nome" />
+        </div>
+        <div class="col-5 col-md-5 col-sm-5 col-xl-5 col-lg-5">&nbsp;</div>
+    </div>
+    <div class="row">
+        <div class="col-1 col-md-1 col-sm-1 col-xl-1 col-lg-1">&nbsp;</div>
+        <div class="col-6 col-md-6 col-sm-6 col-xl-6 col-lg-6">
+            <label for="Nome" class="col-form-label font-weight-bold">Responsável</label>
+            <select id="Sexo" class="form-control">
+                @foreach (var responsavel in responsavelLista)
+                {
+                    var selected = responsavel.ResponsavelId == Model.ResponsavelId ? "selected" : "";
+                    <option value="@responsavel.ResponsavelId" @selected>@responsavel.Responsavel1</option>
+                }
+            </select>
+        </div>
+        <div class="col-5 col-md-5 col-sm-5 col-xl-5 col-lg-5">&nbsp;</div>
+    </div>
+    <div class="row">
+        <div class="col-1 col-md-1 col-sm-1 col-xl-1 col-lg-1">&nbsp;</div>
+        <div class="col-1 col-md-1 col-sm-1 col-xl-1 col-lg-1">
+            <label for="Celular" class="col-form-label font-weight-bold">Celular</label>
+            <input type="text" class="form-control" id="Celular" value="@Model.Celular" />
+        </div>
+        <div class="col-1 col-md-1 col-sm-1 col-xl-1 col-lg-1">
+            <label for="Sexo" class="col-form-label font-weight-bold">Sexo</label>
+            <select id="Sexo" class="form-control">
+                <option value="">Selecione</option>
+                <option value="M" @sexoM>Masculino</option>
+                <option value="F" @sexoF>Feminino</option>
+            </select>
+        </div>
+        <div class="col-2 col-md-2 col-sm-2 col-xl-2 col-lg-2">
+            <label for="DataNascimento" class="col-form-label font-weight-bold">Aniversário</label>
+            <input type="text" class="form-control" id="DataNascimento" value="@Model.DataNascimento.ToDateFormated()" />
+        </div>
+        <div class="col-1 col-md-1 col-sm-1 col-xl-1 col-lg-1">&nbsp;</div>
+    </div>
+    <div class="row">
+        <div class="col-1 col-md-1 col-sm-1 col-xl-1 col-lg-1">&nbsp;</div>
+        <div class="col-1 col-md-1 col-sm-1 col-xl-1 col-lg-1">
+            <label for="Celular" class="col-form-label font-weight-bold">Grupo de Jovens</label>
+            <input type="text" class="form-control" id="GrupoDeJovens" value="@Model.GrupoDeJovens" />
+        </div>
+        <div class="col-1 col-md-1 col-sm-1 col-xl-1 col-lg-1">
+            <label for="Sexo" class="col-form-label font-weight-bold">Sexo</label>
+            <select id="Sexo" class="form-control">
+                <option value="">Selecione</option>
+                <option value="M" @sexoM>Masculino</option>
+                <option value="F" @sexoF>Feminino</option>
+            </select>
+        </div>
+        <div class="col-2 col-md-2 col-sm-2 col-xl-2 col-lg-2">
+            <label for="DataNascimento" class="col-form-label font-weight-bold">Aniversário</label>
+            <input type="text" class="form-control" id="DataNascimento" value="@Model.DataNascimento.ToDateFormated()" />
+        </div>
+        <div class="col-1 col-md-1 col-sm-1 col-xl-1 col-lg-1">&nbsp;</div>
+    </div>
+</div>
+
+}
