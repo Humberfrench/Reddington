@@ -8,6 +8,7 @@ using Red.Application.ViewModel;
 
 namespace Red.Web.Controllers
 {
+    [RoutePrefix("Aluno")]
     public class AlunoController : Controller
     {
         private readonly IAlunoServiceApp alunoServiceApp;
@@ -24,6 +25,7 @@ namespace Red.Web.Controllers
         }
 
         // GET: Aluno
+        [Route("")]
         public ActionResult Index()
         {
             var alunos = alunoServiceApp.ObterTodos();
@@ -33,6 +35,7 @@ namespace Red.Web.Controllers
             return View(alunos);
         }
 
+        [Route("{id}")]
         public ActionResult Edit(int id)
         {
             var aluno = alunoServiceApp.ObterPorId(id);
@@ -43,6 +46,7 @@ namespace Red.Web.Controllers
             return View("Aluno", aluno);
         }
 
+        [Route("{new}")]
         public ActionResult Novo()
         {
             var aluno = new AlunoViewModel();
@@ -54,24 +58,6 @@ namespace Red.Web.Controllers
 
         }
 
-        //#region private methods
-        //private SelectList ObterListaStatusParaCombo()
-        //{
-        //    var listaStatus = statusServiceApp.ObterTodos();
-        //    var statusList = new SelectList(listaStatus, "StatusId", "Descricao");
-
-        //    return statusList;
-        //}
-
-        //private SelectList ObterListaResponsavelParaCombo()
-        //{
-        //    var listaResponsavel = responsavelServiceApp.ObterTodos();
-        //    var responsavelList = new SelectList(listaResponsavel.OrderBy(resp => resp.Responsavel1), "ResponsavelId", "Responsavel1");
-
-        //    return responsavelList;
-        //}
-
-        //#endregion
 
     }
 }
