@@ -57,13 +57,13 @@
                             @Html.DisplayFor(modelItem => item.Status.Descricao)
                         </td>
                         <td style="text-align:right;">
-                            <button type="button" class="btn btn-success btn-sm" onclick="Edit('@item.AlunoId')">
+                            <a class="btn btn-success btn-sm" onclick="Edit('@item.AlunoId')" href="@Url.Action("Edit",new { id = item.AlunoId })">
                                 <i class="fa fa-edit" data-toggle="tooltip" data-placement="top" title="Editar Registro"></i>
-                            </button>
-                            <button type="button" id="Excluir" name="Excluir" class="btn btn-danger btn-sm" onclick="ExcluirConfirmar('@item.AlunoId','@item.Nome')">
+                            </a>
+                            <a type="button" class="btn btn-danger btn-sm" href="#">
                                 <i class=" fa fa-trash" data-toggle="tooltip" data-placement="top" title="Excluir Registro">
                                 </i>
-                            </button>
+                            </a>
                         </td>
                     </tr>
                 }
