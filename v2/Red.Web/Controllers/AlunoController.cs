@@ -46,7 +46,7 @@ namespace Red.Web.Controllers
             return View("Aluno", aluno);
         }
 
-        [Route("{new}")]
+        [Route("Novo")]
         public ActionResult Novo()
         {
             var aluno = new AlunoViewModel();
@@ -58,6 +58,16 @@ namespace Red.Web.Controllers
 
         }
 
+        public ActionResult Excluir(int id)
+        {
+            var aluno = alunoServiceApp.Excluir(id);
+
+            var alunos = alunoServiceApp.ObterTodos();
+
+            alunos = alunos.OrderBy(a => a.Nome).ToList();
+
+            return View("Index", alunos);
+        }
 
     }
 }
