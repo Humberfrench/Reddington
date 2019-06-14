@@ -10,11 +10,11 @@
     var sexoM = Model.Sexo == "M" ? "selected" : "";
     var sexoF = Model.Sexo == "F" ? "selected" : "";
 
-    var GrupoDeJovensS = Model.GrupoDeJovens ? "checked" : "";
-    var GrupoDeJovensN = !Model.GrupoDeJovens ? "checked" : "";
+    var GrupoDeJovensS = Model.GrupoDeJovens ? "checked=checked" : "";
+    var GrupoDeJovensN = !Model.GrupoDeJovens ? "checked=checked" : "";
 
-    var MatriculadoS = Model.Matriculado ? "checked" : "";
-    var MatriculadoN = !Model.Matriculado ? "checked" : "";
+    var MatriculadoS = Model.Matriculado ? "checked=checked" : "";
+    var MatriculadoN = !Model.Matriculado ? "checked=checked" : "";
 
     IEnumerable<StatusViewModel> statusLista = ViewBag.Status as IEnumerable<StatusViewModel>;
     IEnumerable<ResponsavelViewModel> responsavelLista = ViewBag.Responsavel as IEnumerable<ResponsavelViewModel>;
