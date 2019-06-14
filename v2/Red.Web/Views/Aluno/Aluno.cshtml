@@ -9,6 +9,13 @@
 
     var sexoM = Model.Sexo == "M" ? "selected" : "";
     var sexoF = Model.Sexo == "F" ? "selected" : "";
+
+    var GrupoDeJovensS = Model.GrupoDeJovens ? "selected" : "";
+    var GrupoDeJovensN = Model.GrupoDeJovens ? "selected" : "";
+
+    var MatriculadoS = Model.Matriculado ? "selected" : "";
+    var MatriculadoN = Model.Matriculado ? "selected" : "";
+
     IEnumerable<StatusViewModel> statusLista = ViewBag.Status as IEnumerable<StatusViewModel>;
     IEnumerable<ResponsavelViewModel> responsavelLista = ViewBag.Responsavel as IEnumerable<ResponsavelViewModel>;
 }
@@ -58,27 +65,37 @@
                 <label for="DataNascimento" class="col-form-label-lg font-weight-bold">Aniversário</label>
                 <input type="text" class="form-control form-control-lg" id="DataNascimento" value="@Model.DataNascimento.ToDateFormated()" />
             </div>
-            <div class="col-1 col-md-1 col-sm-1 col-xl-1 col-lg-1">&nbsp;</div>
+            <div class="col-4 col-md-4 col-sm-4 col-xl-4 col-lg-4">&nbsp;</div>
         </div>
         <div class="row">
             <div class="col-2 col-md-2 col-sm-2 col-xl-2 col-lg-2">&nbsp;</div>
             <div class="col-2 col-md-2 col-sm-2 col-xl-2 col-lg-2">
-                <label for="Celular" class="col-form-label-lg font-weight-bold">Grupo de Jovens</label>
-                <input type="text" class="form-control form-control-lg" id="GrupoDeJovens" value="@Model.GrupoDeJovens" />
+                <label class="col-form-label-lg font-weight-bold">Grupo de Jovens</label><br />
+                <label for="GrupoDeJovens0" class="col-form-label-lg">Não</label>
+                <input type="radio" value="0" name="GrupoDeJovens" id="GrupoDeJovens0" @GrupoDeJovensN class="custom-radio"/>&nbsp;&nbsp;
+                <label for="GrupoDeJovens1" class="col-form-label-lg">Sim</label>
+                <input type="radio" value="1" name="GrupoDeJovens" id="GrupoDeJovens1" @GrupoDeJovensS class="custom-radio"/>
+                <input type="hidden" class="form-control form-control-lg" id="GrupoDeJovens" value="@Model.GrupoDeJovens.BitToInt()" />
             </div>
             <div class="col-2 col-md-2 col-sm-2 col-xl-2 col-lg-2">
-                <label for="Sexo" class="col-form-label-lg font-weight-bold">Sexo</label>
+                <label class="col-form-label-lg font-weight-bold">Matriculado</label><br />
+                <label for="Matriculado0" class="col-form-label-lg">Não</label>
+                <input type="radio" value="0" name="Matriculado" id="Matriculado0" @MatriculadoN class="custom-radio"/>&nbsp;&nbsp;
+                <label for="Matriculado1" class="col-form-label-lg">Sim</label>
+                <input type="radio" value="1" name="Matriculado" id="Matriculado" @MatriculadoS class="custom-radio"/>
+                <input type="hidden" class="form-control form-control-lg" id="Matriculado" value="@Model.Matriculado.BitToInt()" />
+            </div>
+            <div class="col-2 col-md-2 col-sm-2 col-xl-2 col-lg-2">
+                <label for="Nome" class="col-form-label-lg font-weight-bold">Responsável</label>
                 <select id="Sexo" class="form-control form-control-lg">
-                    <option value="">Selecione</option>
-                    <option value="M" @sexoM>Masculino</option>
-                    <option value="F" @sexoF>Feminino</option>
+                    @foreach (var status in statusLista)
+                    {
+                        var selected = status.StatusId == Model.StatusId ? "selected" : "";
+                        <option value="@status.StatusId" @selected>@status.Descricao</option>
+                    }
                 </select>
             </div>
-            <div class="col-2 col-md-2 col-sm-2 col-xl-2 col-lg-2">
-                <label for="DataNascimento" class="col-form-label-lg font-weight-bold">Aniversário</label>
-                <input type="text" class="form-control form-control-lg" id="DataNascimento" value="@Model.DataNascimento.ToDateFormated()" />
-            </div>
-            <div class="col-1 col-md-1 col-sm-1 col-xl-1 col-lg-1">&nbsp;</div>
+            <div class="col-4 col-md-4 col-sm-4 col-xl-4 col-lg-4">&nbsp;</div>
         </div>
     </div>
 

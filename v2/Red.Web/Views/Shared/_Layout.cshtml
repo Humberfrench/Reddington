@@ -24,22 +24,15 @@
                     @{
 
                         active = "";
-                        if (LocationHelper.IsCurrentController("home", ViewContext))
-                        {
-                            active = "active";
-                        }
-
+                        if (LocationHelper.IsCurrentController("home", ViewContext)) { active = "active"; }
                     }
-                    <li class="nav-item active @active ">
+                    <li class="nav-item @active ">
                         <a class="nav-link" href="@Url.Action("Index", "Home")"><h5>Home</h5></a>
                     </li>
                     @{
 
                         active = "";
-                        if (LocationHelper.IsCurrentController("aluno", ViewContext))
-                        {
-                            active = "active";
-                        }
+                        if (LocationHelper.IsCurrentController("aluno", ViewContext)) { active = "active"; }
                     }
                     <li class="nav-item @active">
                         <a class="nav-link" href="@Url.Action("Index","Aluno")"><h5>Alunos</h5></a>
@@ -47,10 +40,7 @@
                     @{
 
                         active = "";
-                        if (LocationHelper.IsCurrentController("Responsavel", ViewContext))
-                        {
-                            active = "active";
-                        }
+                        if (LocationHelper.IsCurrentController("Responsavel", ViewContext)) { active = "active"; }
                     }
                     <li class="nav-item">
                         <a class="nav-link" href="@Url.Action("Index","Responsavel")"><h5>Responsável</h5></a>
@@ -58,10 +48,7 @@
                     @{
 
                         active = "";
-                        if (LocationHelper.IsCurrentController("Evangelizador", ViewContext))
-                        {
-                            active = "active";
-                        }
+                        if (LocationHelper.IsCurrentController("Evangelizador", ViewContext)) { active = "active"; }
                     }
                     <li class="nav-item">
                         <a class="nav-link" href="@Url.Action("Index","Evangelizador")"><h5>Evangelizadores</h5></a>
@@ -69,10 +56,7 @@
                     @{
 
                         active = "";
-                        if (LocationHelper.IsCurrentController("Turma", ViewContext))
-                        {
-                            active = "active";
-                        }
+                        if (LocationHelper.IsCurrentController("Turma", ViewContext)) { active = "active"; }
                     }
                     <li class="nav-item">
                         <a class="nav-link" href="@Url.Action("Index","Turma")"><h5>Turmas</h5></a>
@@ -92,16 +76,16 @@
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+                    <input class="form-control mr-sm-2" type="search" placeholder="Localizar" aria-label="Localizar">
+                    <button class="btn btn-success my-2 my-sm-0" type="submit">Localizar</button>
                 </form>
             </div>
         </nav>
     </div>
     <div class="container-fluid body-content">
         @RenderBody()
-        <hr />
-        <footer>
+        <footer class="fixed-bottom">
+            <hr />
             <p>&copy; @DateTime.Now.Year - French Web Corp</p>
         </footer>
     </div>
