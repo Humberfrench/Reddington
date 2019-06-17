@@ -34,6 +34,7 @@ namespace Red.Web.Controllers
 
             return View(alunos);
         }
+        [Route("Status/{statusId}")]
         public ActionResult Index(int statusId)
         {
             var alunos = alunoServiceApp.ObterTodosPorStatus(statusId);
