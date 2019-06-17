@@ -47,20 +47,20 @@
                         <td>
                             @item.DataNascimento.ToDateFormated()
                         </td>
-                        <td>
-                            @Html.Raw(item.GrupoDeJovens.ToSimNao())
+                        <td class="text-center">
+                            @Html.Raw(item.GrupoDeJovens.ToSimNaoIcon())
                         </td>
-                        <td>
-                            @Html.Raw(item.Matriculado.ToSimNao())
+                        <td class="text-center">
+                            @Html.Raw(item.Matriculado.ToSimNaoIcon())
                         </td>
                         <td>
                             @Html.DisplayFor(modelItem => item.Status.Descricao)
                         </td>
                         <td style="text-align:right;">
-                            <a class="btn btn-success btn-sm" onclick="Edit('@item.AlunoId')" href="@Url.Action("Edit",new { id = item.AlunoId })">
+                            <a class="btn btn-success btn-sm" href="@Url.Action("Edit",new { id = item.AlunoId })">
                                 <i class="fa fa-edit" data-toggle="tooltip" data-placement="top" title="Editar Registro"></i>
                             </a>
-                            <a type="button" class="btn btn-danger btn-sm" href="#">
+                            <a class="btn btn-danger btn-sm" href="@Url.Action("Excluir",new { id = item.AlunoId })">
                                 <i class=" fa fa-trash" data-toggle="tooltip" data-placement="top" title="Excluir Registro">
                                 </i>
                             </a>

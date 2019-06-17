@@ -6,6 +6,7 @@ namespace Red.Application.Interfaces
 {
     public interface IAlunoServiceApp : IServiceBaseApp<AlunoViewModel>
     {
+        List<AlunoViewModel> ObterTodosPorStatus(int statusId);
 
     }
 }

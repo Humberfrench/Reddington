@@ -1,5 +1,6 @@
 ﻿using French.Tools.DomainValidator;
 using Red.Domain.Entity;
+using System.Collections.Generic;
 
 namespace Red.Domain.Interfaces.Services
 {
@@ -7,6 +8,6 @@ namespace Red.Domain.Interfaces.Services
     {
         ValidationResult Excluir(int id);
         ValidationResult Gravar(Aluno entity);
-
+        List<Aluno> ObterTodosPorStatus(int statusId);
     }
 }

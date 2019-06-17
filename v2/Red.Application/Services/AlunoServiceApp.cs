@@ -68,11 +68,19 @@ namespace Red.Application.Services
 
         }
 
+        public List<AlunoViewModel> ObterTodosPorStatus(int statusId)
+        {
+            var dados = alunoService.ObterTodosPorStatus(statusId);
+
+            var retorno = Mapper.Map<List<AlunoViewModel>>(dados);
+
+            return retorno;
+        }
+
         public void Dispose()
         {
             GC.SuppressFinalize(this);
         }
-
     }
 }
 

@@ -34,6 +34,14 @@ namespace Red.Web.Controllers
 
             return View(alunos);
         }
+        public ActionResult Index(int statusId)
+        {
+            var alunos = alunoServiceApp.ObterTodosPorStatus(statusId);
+
+            alunos = alunos.OrderBy(a => a.Nome).ToList();
+
+            return View(alunos);
+        }
 
         [Route("{id}")]
         public ActionResult Edit(int id)

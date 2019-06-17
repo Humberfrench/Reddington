@@ -22,6 +22,10 @@ namespace Red.Services
             validationResult = new ValidationResult();
         }
 
+        public List<Aluno> ObterTodosPorStatus(int statusId)
+        {
+            return Pesquisar(a => a.StatusId == statusId).ToList();
+        }
         public ValidationResult Excluir(int id)
         {
             var entity = repAluno.ObterPorId(id);
