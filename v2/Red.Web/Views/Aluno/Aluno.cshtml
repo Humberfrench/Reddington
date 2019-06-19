@@ -21,6 +21,18 @@
 }
 
 <h2 class="text-center text-danger">Alunos</h2>
+@if (ViewBag.HasMensagem)
+{
+<div class="alert alert-success" role="alert">
+    @ViewBag.Mensagem
+</div>
+}
+@if (ViewBag.HasErro)
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.Erro
+    </div>
+}
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()

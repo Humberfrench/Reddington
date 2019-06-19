@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Red.Application.Interfaces;
 using Red.Application.ViewModel;
+using French.Tools.DomainValidator;
 
 namespace Red.Web.Controllers
 {
@@ -29,8 +30,13 @@ namespace Red.Web.Controllers
         public ActionResult Index()
         {
             var alunos = alunoServiceApp.ObterTodos();
-
+                       
             alunos = alunos.OrderBy(a => a.Nome).ToList();
+
+            ViewBag.HasErro = false;
+            ViewBag.HasMensagem = false;
+            ViewBag.Erro = "";
+            ViewBag.Mensagem = "";
 
             return View(alunos);
         }
@@ -40,6 +46,11 @@ namespace Red.Web.Controllers
             var alunos = alunoServiceApp.ObterTodosPorStatus(statusId);
 
             alunos = alunos.OrderBy(a => a.Nome).ToList();
+
+            ViewBag.HasErro = false;
+            ViewBag.HasMensagem = false;
+            ViewBag.Erro = "";
+            ViewBag.Mensagem = "";
 
             return View(alunos);
         }
@@ -69,11 +80,22 @@ namespace Red.Web.Controllers
 
         public ActionResult Excluir(int id)
         {
-            var aluno = alunoServiceApp.Excluir(id);
 
+            ViewBag.HasErro = false;
+            ViewBag.HasMensagem = false;
+            ViewBag.Erro = "";
+            ViewBag.Mensagem = "";
+
+            var alunoValidator = alunoServiceApp.Excluir(id);
             var alunos = alunoServiceApp.ObterTodos();
 
             alunos = alunos.OrderBy(a => a.Nome).ToList();
+
+            if(!alunoValidator.IsValid)
+            {
+                ViewBag.HasErro = true;
+                ViewBag.Erro = alunoValidator.Erros[0].Message;
+            }
 
             return View("Index", alunos);
         }
